@@ -1,4 +1,6 @@
 {
-	"item.gunswithoutrosesadditions.test": "Test",
-	"item.gunswithoutrosesadditions.test.desc": "Test"
+	"item.gunswithoutrosesadditions.utherium_bullet": "Utherium Bullet",
+	"item.gunswithoutrosesadditions.utherium_bullet.desc": "x1.5 damage to Rotspawn",
+	"item.gunswithoutrosesadditions.froststeel_bullet": "Froststeel Bullet",
+	"item.gunswithoutrosesadditions.froststeel_bullet.desc": "Slows on hit"
 }

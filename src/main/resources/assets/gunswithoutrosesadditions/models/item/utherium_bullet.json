@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"layer0": "gunswithoutrosesadditions:item/test"
+		"layer0": "gunswithoutrosesadditions:item/utherium_bullet"
 	}
 }

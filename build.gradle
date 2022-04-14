@@ -91,6 +91,8 @@ dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
 
     implementation fg.deobf("curse.maven:gunswithoutroses-405077:${project.gwr_file}")
+    // implementation fg.deobf("curse.maven:bumblezone-362479:${project.bumblezone_file}")
+    implementation fg.deobf("curse.maven:undergarden-379849:${project.undergarden_file}")
 }
 
 jar {

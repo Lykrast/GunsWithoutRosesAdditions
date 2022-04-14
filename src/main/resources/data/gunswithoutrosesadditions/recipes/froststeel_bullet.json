@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{ "item": "undergarden:froststeel_ingot" },
+		{ "item": "undergarden:froststeel_ingot" },
+		{ "item": "undergarden:froststeel_ingot" },
+		{ "item": "undergarden:froststeel_ingot" },
+        { "tag": "forge:gunpowder" }
+    ],
+	"result": { "item": "gunswithoutrosesadditions:froststeel_bullet", "count": 32 },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "undergarden" }]
+}
