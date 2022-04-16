@@ -27,6 +27,10 @@ minecraft {
     // Default run configurations.
     runs {
         client {
+			// Thanks forge mixin troubleshooting on the Patchouli github! https://github.com/VazkiiMods/Patchouli
+			property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+			
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment
@@ -85,14 +89,30 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        name = "botania"
+        url = "https://maven.blamejared.com/"
+    }
+    maven {
+        name = "curios"
+        url = "https://maven.theillusivec4.top/"
+    }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
 
     implementation fg.deobf("curse.maven:gunswithoutroses-405077:${project.gwr_file}")
-    // implementation fg.deobf("curse.maven:bumblezone-362479:${project.bumblezone_file}")
     implementation fg.deobf("curse.maven:undergarden-379849:${project.undergarden_file}")
+	
+    implementation fg.deobf("curse.maven:bumblezone-362479:${project.bumblezone_file}")
+	// Bumblezone dependency
+    implementation fg.deobf("curse.maven:nbtdeadlock-560323:${project.nbtdeadlock_file}")
+	
+    implementation fg.deobf("vazkii.botania:Botania:${project.botania_version}")
+	// Botania dependencies
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${project.curios_version}")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${project.patchouli_version}")
 }
 
 jar {

@@ -29,6 +29,6 @@ Compatibility between Guns Without Roses and an assortment of random mods.
 [[dependencies.gunswithoutrosesadditions]]
     modId="gunswithoutroses"
     mandatory=true
-    versionRange="[1.18.2-1.0.13,)"
+    versionRange="[1.18.2-1.0.14,)"
     ordering="NONE"
     side="BOTH"
