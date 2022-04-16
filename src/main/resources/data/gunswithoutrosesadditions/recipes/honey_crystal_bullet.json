@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{ "item": "the_bumblezone:honey_crystal_shards" },
+		{ "item": "the_bumblezone:honey_crystal_shards" },
+		{ "item": "the_bumblezone:honey_crystal_shards" },
+		{ "item": "the_bumblezone:honey_crystal_shards" },
+        { "tag": "forge:gunpowder" }
+    ],
+	"result": { "item": "gunswithoutrosesadditions:honey_crystal_bullet", "count": 32 },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "the_bumblezone" }]
+}

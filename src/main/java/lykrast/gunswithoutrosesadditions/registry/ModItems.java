@@ -16,6 +16,7 @@ public class ModItems {
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
 		IForgeRegistry<Item> reg = event.getRegistry();
 		if (ModList.get().isLoaded(CompatModids.UNDERGARDEN)) CompatUndergardenItems.registerItems(reg);
+		if (ModList.get().isLoaded(CompatModids.BUMBLEZONE)) CompatBumblezoneItems.registerItems(reg);
 	}
 
 	public static Item.Properties defP() {

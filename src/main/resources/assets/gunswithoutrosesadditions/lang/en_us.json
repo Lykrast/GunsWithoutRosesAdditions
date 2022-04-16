@@ -2,5 +2,8 @@
 	"item.gunswithoutrosesadditions.utherium_bullet": "Utherium Bullet",
 	"item.gunswithoutrosesadditions.utherium_bullet.desc": "x1.5 damage to Rotspawn",
 	"item.gunswithoutrosesadditions.froststeel_bullet": "Froststeel Bullet",
-	"item.gunswithoutrosesadditions.froststeel_bullet.desc": "Slows on hit"
+	"item.gunswithoutrosesadditions.froststeel_bullet.desc": "Slows on hit",
+	
+	"item.gunswithoutrosesadditions.honey_crystal_bullet": "Honey Crystal Bullet",
+	"item.gunswithoutrosesadditions.honey_crystal_bullet.desc": "Make bees angry at target"
 }
