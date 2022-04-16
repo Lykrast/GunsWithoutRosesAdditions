@@ -1,6 +1,7 @@
 package lykrast.gunswithoutrosesadditions.registry;
 
 import lykrast.gunswithoutroses.registry.ItemGroupGunsWithoutRoses;
+import lykrast.gunswithoutrosesadditions.CompatModids;
 import lykrast.gunswithoutrosesadditions.GunsWithoutRosesAdditions;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.event.RegistryEvent;
@@ -14,7 +15,7 @@ public class ModItems {
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
 		IForgeRegistry<Item> reg = event.getRegistry();
-		if (ModList.get().isLoaded("undergarden")) CompatUndergardenItems.registerItems(reg);
+		if (ModList.get().isLoaded(CompatModids.UNDERGARDEN)) CompatUndergardenItems.registerItems(reg);
 	}
 
 	public static Item.Properties defP() {
