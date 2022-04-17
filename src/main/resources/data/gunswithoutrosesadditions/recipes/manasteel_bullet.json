@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{ "tag": "botania:manasteel_ingots" },
+		{ "tag": "botania:manasteel_ingots" },
+		{ "tag": "botania:manasteel_ingots" },
+		{ "tag": "botania:manasteel_ingots" },
+        { "tag": "forge:gunpowder" }
+    ],
+	"result": { "item": "gunswithoutrosesadditions:manasteel_bullet", "count": 32 },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "botania" }]
+}

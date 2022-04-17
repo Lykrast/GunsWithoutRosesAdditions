@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"D  ",
+		"SDF",
+		" SL"
+	],
+	"key": {
+		"D": { "tag": "botania:terrasteel_ingots" },
+		"S": { "item": "botania:livingwood_twig" },
+		"F": { "item": "minecraft:flint" },
+		"L": { "tag": "botania:livingwood_logs" }
+	},
+	"result": { "item": "gunswithoutrosesadditions:terra_shotgun" },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "botania" }]
+}

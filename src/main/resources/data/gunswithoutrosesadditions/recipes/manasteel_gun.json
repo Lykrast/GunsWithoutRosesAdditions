@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"I  ",
+		"SIF",
+		" SI"
+	],
+	"key": {
+		"I": { "tag": "botania:manasteel_ingots" },
+		"S": { "item": "botania:livingwood_twig" },
+		"F": { "item": "minecraft:flint" }
+	},
+	"result": { "item": "gunswithoutrosesadditions:manasteel_gun" },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "botania" }]
+}

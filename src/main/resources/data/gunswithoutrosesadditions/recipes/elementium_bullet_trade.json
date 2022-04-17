@@ -1,0 +1,8 @@
+{
+	"type": "botania:elven_trade",
+    "ingredients": [
+		{ "item": "gunswithoutrosesadditions:manasteel_bullet" }
+    ],
+	"output": { "item": "gunswithoutrosesadditions:elementium_bullet" },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "botania" }]
+}
