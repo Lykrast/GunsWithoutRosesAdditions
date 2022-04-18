@@ -1,0 +1,21 @@
+{
+	"item.gunswithoutrosesadditions.utherium_bullet": "Balle en uthérium",
+	"item.gunswithoutrosesadditions.utherium_bullet.desc": "x1.5 dégâts contre les rotspawn",
+	"item.gunswithoutrosesadditions.froststeel_bullet": "Balle en givracier",
+	"item.gunswithoutrosesadditions.froststeel_bullet.desc": "Ralenti à l'impact",
+	
+	"item.gunswithoutrosesadditions.honey_crystal_bullet": "Balle en cristal de miel",
+	"item.gunswithoutrosesadditions.honey_crystal_bullet.desc": "Énerve les abeilles envers la cible",
+	
+	"item.gunswithoutrosesadditions.manasteel_gun": "Fusil en manacier",
+	"item.gunswithoutrosesadditions.manasteel_gun.desc": "Se répare avec du mana",
+	"item.gunswithoutrosesadditions.elementium_gun": "Fusil en élémentium",
+	"item.gunswithoutrosesadditions.terra_shotgun": "Destructeur Terra",
+	"item.gunswithoutrosesadditions.terra_shotgun.desc": "Tire aussi une décharge de mana",
+	"item.gunswithoutrosesadditions.manasteel_bullet": "Balle en manacier",
+	"item.gunswithoutrosesadditions.elementium_bullet": "Balle en élémentium",
+	"item.gunswithoutrosesadditions.elementium_bullet.desc": "Bénéficie des bonus des fées",
+	
+	"item.gunswithoutrosesadditions.balloon_bullet": "Balle ballon",
+	"item.gunswithoutrosesadditions.balloon_bullet.desc": "Attache un ballon à la cible"
+}
