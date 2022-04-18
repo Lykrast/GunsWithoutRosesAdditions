@@ -8,7 +8,7 @@ import com.github.alexthe668.cloudstorage.entity.BalloonEntity;
 
 import lykrast.gunswithoutroses.entity.BulletEntity;
 import lykrast.gunswithoutroses.item.BulletItem;
-import lykrast.gunswithoutrosesadditions.registry.CompatCloudStorageItems;
+import lykrast.gunswithoutrosesadditions.registry.CompatCloudStorage;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -33,7 +33,7 @@ public class BalloonBullet extends BulletItem {
 	@Override
 	public void onLivingEntityHit(BulletEntity projectile, LivingEntity target, @Nullable Entity shooter, Level world) {
 		//Same behavior as a balloon arrow
-		BalloonEntity balloon = (BalloonEntity) CompatCloudStorageItems.BALLOON.create(world);
+		BalloonEntity balloon = (BalloonEntity) CompatCloudStorage.BALLOON.create(world);
 		balloon.setPos(target.getX(), target.getY(1.0), target.getZ());
 		balloon.setChildId(target.getUUID());
 		balloon.setBalloonColor(DEFAULT_COLOR);

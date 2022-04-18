@@ -15,10 +15,10 @@ public class ModItems {
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
 		IForgeRegistry<Item> reg = event.getRegistry();
-		if (ModList.get().isLoaded(CompatModids.UNDERGARDEN)) CompatUndergardenItems.registerItems(reg);
-		if (ModList.get().isLoaded(CompatModids.BUMBLEZONE)) CompatBumblezoneItems.registerItems(reg);
-		if (ModList.get().isLoaded(CompatModids.BOTANIA)) CompatBotaniaItems.registerItems(reg);
-		if (ModList.get().isLoaded(CompatModids.CLOUD_STORAGE)) CompatCloudStorageItems.registerItems(reg);
+		if (ModList.get().isLoaded(CompatModids.UNDERGARDEN)) CompatUndergarden.registerItems(reg);
+		if (ModList.get().isLoaded(CompatModids.BUMBLEZONE)) CompatBumblezone.registerItems(reg);
+		if (ModList.get().isLoaded(CompatModids.BOTANIA)) CompatBotania.registerItems(reg);
+		if (ModList.get().isLoaded(CompatModids.CLOUD_STORAGE)) CompatCloudStorage.registerItems(reg);
 	}
 
 	public static Item.Properties defP() {

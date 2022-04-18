@@ -7,7 +7,7 @@ import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.ObjectHolder;
 
-public class CompatCloudStorageItems {
+public class CompatCloudStorage {
 	public static Item balloonBullet;
 	@ObjectHolder(CompatModids.CLOUD_STORAGE + ":balloon")
 	public static final EntityType<?> BALLOON = null;

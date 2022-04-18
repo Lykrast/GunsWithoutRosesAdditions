@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.ObjectHolder;
 
-public class CompatBumblezoneItems {
+public class CompatBumblezone {
 	public static Item honeyCrystalBullet;
 	@ObjectHolder(CompatModids.BUMBLEZONE + ":wrath_of_the_hive")
 	public static final MobEffect WRATH = null;

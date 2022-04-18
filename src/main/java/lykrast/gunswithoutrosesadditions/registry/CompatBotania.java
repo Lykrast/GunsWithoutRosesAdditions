@@ -10,7 +10,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.ObjectHolder;
 
-public class CompatBotaniaItems {
+public class CompatBotania {
 	public static Item manasteelGun, elementiumGun, terraShotgun;
 	public static Item manasteelBullet, elementiumBullet;
 	

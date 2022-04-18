@@ -7,7 +7,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
-public class CompatUndergardenItems {
+public class CompatUndergarden {
 	public static Item utheriumBullet, froststeelBullet;
 	
 	public static void registerItems(IForgeRegistry<Item> reg) {
