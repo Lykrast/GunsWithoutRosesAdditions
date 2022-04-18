@@ -23,6 +23,11 @@ public class CompatBotania {
 	//See Terra Shotgun
 	//@ObjectHolder(CompatModids.BOTANIA + ":terrablade")
 	//public static final SoundEvent BLADE_SOUND = null;
+	//For Elementium Bullet
+	@ObjectHolder(CompatModids.BOTANIA + ":elementium_sword")
+	public static final Item ELEMENTIUM_SWORD = null;
+	@ObjectHolder(CompatModids.BOTANIA + ":elementium_helmet")
+	public static final Item ELEMENTIUM_HELMET = null;
 	
 	public static void registerItems(IForgeRegistry<Item> reg) {
 		manasteelGun = ModItems.initItem(reg, new ManaGun(ModItems.defP().durability(616), 0, 1, 16, 1.5, 20).repair(() -> Ingredient.of(MANASTEEL)), "manasteel_gun");
@@ -30,7 +35,6 @@ public class CompatBotania {
 		terraShotgun = ModItems.initItem(reg, new TerraShotgun(ModItems.defP().durability(3058).fireResistant().rarity(Rarity.UNCOMMON), 0, 0.5, 20, 7, 26, 4).ignoreInvulnerability(true).fireSound(ModSounds.shotgun).repair(() -> Ingredient.of(TERRASTEEL)), "terra_shotgun");
 		
 		manasteelBullet = ModItems.initItem(reg, new BulletItem(ModItems.defP(), 7), "manasteel_bullet");
-		//TODO actual effect to elementium
-		elementiumBullet = ModItems.initItem(reg, new BulletItem(ModItems.defP(), 7), "elementium_bullet");
+		elementiumBullet = ModItems.initItem(reg, new ElementiumBullet(ModItems.defP(), 7), "elementium_bullet");
 	}
 }

@@ -32,7 +32,7 @@ public class UtheriumBullet extends BulletItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) {
 		super.appendHoverText(stack, worldIn, tooltip, flagIn);
-		tooltip.add(new TranslatableComponent("item.gunswithoutrosesadditions.utherium_bullet.desc").withStyle(ChatFormatting.GRAY));
+		tooltip.add(new TranslatableComponent(getDescriptionId(stack) + ".desc").withStyle(ChatFormatting.GRAY));
 	}
 
 }
