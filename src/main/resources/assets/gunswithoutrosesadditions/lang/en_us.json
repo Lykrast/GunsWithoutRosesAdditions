@@ -13,5 +13,8 @@
 	"item.gunswithoutrosesadditions.terra_shotgun": "Terra Blaster",
 	"item.gunswithoutrosesadditions.terra_shotgun.desc": "Also fires a Mana Burst",
 	"item.gunswithoutrosesadditions.manasteel_bullet": "Manasteel Bullet",
-	"item.gunswithoutrosesadditions.elementium_bullet": "Elementium Bullet"
+	"item.gunswithoutrosesadditions.elementium_bullet": "Elementium Bullet",
+	
+	"item.gunswithoutrosesadditions.balloon_bullet": "Balloon Bullet",
+	"item.gunswithoutrosesadditions.balloon_bullet.desc": "Ties a balloon on target"
 }

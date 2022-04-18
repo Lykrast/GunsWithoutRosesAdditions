@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{ "item": "cloudstorage:balloon_bit" },
+		{ "item": "cloudstorage:balloon_bit" },
+		{ "item": "cloudstorage:balloon_bit" },
+		{ "item": "cloudstorage:balloon_bit" },
+        { "tag": "forge:string" },
+        { "tag": "forge:gunpowder" }
+    ],
+	"result": { "item": "gunswithoutrosesadditions:balloon_bullet", "count": 16 },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "cloudstorage" }]
+}

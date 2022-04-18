@@ -18,6 +18,7 @@ public class ModItems {
 		if (ModList.get().isLoaded(CompatModids.UNDERGARDEN)) CompatUndergardenItems.registerItems(reg);
 		if (ModList.get().isLoaded(CompatModids.BUMBLEZONE)) CompatBumblezoneItems.registerItems(reg);
 		if (ModList.get().isLoaded(CompatModids.BOTANIA)) CompatBotaniaItems.registerItems(reg);
+		if (ModList.get().isLoaded(CompatModids.CLOUD_STORAGE)) CompatCloudStorageItems.registerItems(reg);
 	}
 
 	public static Item.Properties defP() {

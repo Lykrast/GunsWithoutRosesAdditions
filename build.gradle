@@ -113,6 +113,10 @@ dependencies {
 	// Botania dependencies
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${project.curios_version}")
     runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${project.patchouli_version}")
+	
+    implementation fg.deobf("curse.maven:cloudstorage-606618:${project.cloudstorage_file}")
+	// Cloud Storage dependency
+    implementation fg.deobf("curse.maven:citadel-331936:${project.citadel_file}")
 }
 
 jar {
