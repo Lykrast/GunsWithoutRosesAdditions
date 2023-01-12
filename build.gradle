@@ -89,6 +89,13 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+	maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
     maven {
         name = "botania"
         url = "https://maven.blamejared.com/"
@@ -102,12 +109,11 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
 
-    implementation fg.deobf("curse.maven:gunswithoutroses-405077:${project.gwr_file}")
+	implementation fg.deobf("maven.modrinth:guns-without-roses:${project.gwr_file}")
+	
     implementation fg.deobf("curse.maven:undergarden-379849:${project.undergarden_file}")
 	
-    implementation fg.deobf("curse.maven:bumblezone-362479:${project.bumblezone_file}")
-	// Bumblezone dependency
-    implementation fg.deobf("curse.maven:nbtdeadlock-560323:${project.nbtdeadlock_file}")
+    implementation fg.deobf("maven.modrinth:the-bumblezone:${project.bumblezone_file}")
 	
     implementation fg.deobf("vazkii.botania:Botania:${project.botania_version}")
 	// Botania dependencies

@@ -9,7 +9,6 @@ import lykrast.gunswithoutroses.item.IBullet;
 import lykrast.gunswithoutroses.item.ShotgunItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -50,8 +49,8 @@ public class TerraShotgun extends ShotgunItem implements ILensEffect {
 	@Override
 	protected void addExtraStatsTooltip(ItemStack stack, @Nullable Level world, List<Component> tooltip) {
 		super.addExtraStatsTooltip(stack, world, tooltip);
-		tooltip.add(new TranslatableComponent(getDescriptionId() + ".desc").withStyle(ChatFormatting.GRAY));
-		tooltip.add(new TranslatableComponent(ManaGun.MANA_REPAIR).withStyle(ChatFormatting.GRAY));
+		tooltip.add(Component.translatable(getDescriptionId() + ".desc").withStyle(ChatFormatting.GRAY));
+		tooltip.add(Component.translatable(ManaGun.MANA_REPAIR).withStyle(ChatFormatting.GRAY));
 	}
 	
 	@Override

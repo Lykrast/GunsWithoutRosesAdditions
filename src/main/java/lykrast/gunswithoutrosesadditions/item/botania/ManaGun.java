@@ -8,7 +8,6 @@ import javax.annotation.Nullable;
 import lykrast.gunswithoutroses.item.GunItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -42,7 +41,7 @@ public class ManaGun extends GunItem {
 	@Override
 	protected void addExtraStatsTooltip(ItemStack stack, @Nullable Level world, List<Component> tooltip) {
 		super.addExtraStatsTooltip(stack, world, tooltip);
-		tooltip.add(new TranslatableComponent(MANA_REPAIR).withStyle(ChatFormatting.GRAY));
+		tooltip.add(Component.translatable(MANA_REPAIR).withStyle(ChatFormatting.GRAY));
 	}
 
 }

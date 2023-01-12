@@ -9,7 +9,6 @@ import lykrast.gunswithoutroses.item.BulletItem;
 import lykrast.gunswithoutrosesadditions.registry.CompatBotania;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -55,7 +54,7 @@ public class ElementiumBullet extends BulletItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) {
 		super.appendHoverText(stack, worldIn, tooltip, flagIn);
-		tooltip.add(new TranslatableComponent(getDescriptionId(stack) + ".desc").withStyle(ChatFormatting.GRAY));
+		tooltip.add(Component.translatable(getDescriptionId(stack) + ".desc").withStyle(ChatFormatting.GRAY));
 	}
 
 }

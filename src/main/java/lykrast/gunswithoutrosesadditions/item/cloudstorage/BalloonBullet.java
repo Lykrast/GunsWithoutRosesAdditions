@@ -11,7 +11,6 @@ import lykrast.gunswithoutroses.item.BulletItem;
 import lykrast.gunswithoutrosesadditions.registry.CompatCloudStorage;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -47,7 +46,7 @@ public class BalloonBullet extends BulletItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) {
 		super.appendHoverText(stack, worldIn, tooltip, flagIn);
-		tooltip.add(new TranslatableComponent(getDescriptionId(stack) + ".desc").withStyle(ChatFormatting.GRAY));
+		tooltip.add(Component.translatable(getDescriptionId(stack) + ".desc").withStyle(ChatFormatting.GRAY));
 	}
 
 }
