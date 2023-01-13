@@ -20,7 +20,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import vazkii.botania.common.item.equipment.armor.elementium.ItemElementiumHelm;
+import vazkii.botania.common.item.equipment.armor.elementium.ElementiumHelmItem;
 
 public class ElementiumBullet extends BulletItem {
 	//Copying the array cause it's private
@@ -44,7 +44,7 @@ public class ElementiumBullet extends BulletItem {
 	//Armor set bonus
 	@Override
 	public void onLivingEntityHit(BulletEntity projectile, LivingEntity target, @Nullable Entity shooter, Level world) {
-		if (shooter instanceof Player && ((ItemElementiumHelm)CompatBotania.ELEMENTIUM_HELMET).hasArmorSet((Player)shooter)) {
+		if (shooter instanceof Player && ((ElementiumHelmItem)CompatBotania.ELEMENTIUM_HELMET).hasArmorSet((Player)shooter)) {
 			//Pixies are 40 ticks I'm making it a lil longer here
 			target.addEffect(new MobEffectInstance(POTIONS[world.random.nextInt(POTIONS.length)], 80, 0));
 		}

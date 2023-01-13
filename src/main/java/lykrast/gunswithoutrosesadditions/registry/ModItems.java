@@ -1,24 +1,24 @@
 package lykrast.gunswithoutrosesadditions.registry;
 
+import java.util.function.Supplier;
+
 import lykrast.gunswithoutroses.registry.ItemGroupGunsWithoutRoses;
 import lykrast.gunswithoutrosesadditions.CompatModids;
 import lykrast.gunswithoutrosesadditions.GunsWithoutRosesAdditions;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.registries.IForgeRegistry;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = GunsWithoutRosesAdditions.MODID)
 public class ModItems {	
-	@SubscribeEvent
-	public static void registerItems(final RegistryEvent.Register<Item> event) {
-		IForgeRegistry<Item> reg = event.getRegistry();
-		if (ModList.get().isLoaded(CompatModids.UNDERGARDEN)) CompatUndergarden.registerItems(reg);
-		if (ModList.get().isLoaded(CompatModids.BUMBLEZONE)) CompatBumblezone.registerItems(reg);
-		if (ModList.get().isLoaded(CompatModids.BOTANIA)) CompatBotania.registerItems(reg);
-		if (ModList.get().isLoaded(CompatModids.CLOUD_STORAGE)) CompatCloudStorage.registerItems(reg);
+	public static final DeferredRegister<Item> REG = DeferredRegister.create(ForgeRegistries.ITEMS, GunsWithoutRosesAdditions.MODID);
+	
+	static {
+		if (ModList.get().isLoaded(CompatModids.UNDERGARDEN)) CompatUndergarden.registerItems();
+		if (ModList.get().isLoaded(CompatModids.BUMBLEZONE)) CompatBumblezone.registerItems();
+		if (ModList.get().isLoaded(CompatModids.BOTANIA)) CompatBotania.registerItems();
+		if (ModList.get().isLoaded(CompatModids.CLOUD_STORAGE)) CompatCloudStorage.registerItems();
 	}
 
 	public static Item.Properties defP() {
@@ -29,9 +29,8 @@ public class ModItems {
 		return new Item.Properties().tab(ItemGroupGunsWithoutRoses.INSTANCE).stacksTo(1);
 	}
 
-	public static <I extends Item> I initItem(IForgeRegistry<Item> reg, I item, String name) {
-		item.setRegistryName(GunsWithoutRosesAdditions.MODID, name);
-		reg.register(item);
-		return item;
+	public static <I extends Item> RegistryObject<I> initItem(Supplier<I> item, String name) {
+		REG.register(name, item);
+		return RegistryObject.create(GunsWithoutRosesAdditions.rl(name), ForgeRegistries.ITEMS);
 	}
 }

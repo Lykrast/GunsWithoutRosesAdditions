@@ -18,14 +18,14 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.HitResult;
-import vazkii.botania.api.internal.IManaBurst;
+import vazkii.botania.api.internal.ManaBurst;
 import vazkii.botania.api.mana.BurstProperties;
-import vazkii.botania.api.mana.ILensEffect;
+import vazkii.botania.api.mana.LensEffectItem;
 import vazkii.botania.api.mana.ManaItemHandler;
-import vazkii.botania.common.entity.EntityManaBurst;
+import vazkii.botania.common.entity.ManaBurstEntity;
 import vazkii.botania.common.item.equipment.tool.ToolCommons;
 
-public class TerraShotgun extends ShotgunItem implements ILensEffect {
+public class TerraShotgun extends ShotgunItem implements LensEffectItem {
 	//Match the Terra Blade
 	private static final int MANA_PER_DAMAGE = 100;
 
@@ -57,15 +57,15 @@ public class TerraShotgun extends ShotgunItem implements ILensEffect {
 	protected void shoot(Level world, Player player, ItemStack gun, ItemStack ammo, IBullet bulletItem, boolean bulletFree) {
 		super.shoot(world, player, gun, ammo, bulletItem, bulletFree);
 		//Copied from the Terra Blade
-		EntityManaBurst burst = getBurst(player, gun);
+		ManaBurstEntity burst = getBurst(player, gun);
 		player.level.addFreshEntity(burst);
 		//Can't really hear it in game so might as well not play it for subtitles
 		//player.level.playSound(null, player.getX(), player.getY(), player.getZ(), CompatBotaniaItems.BLADE_SOUND, SoundSource.PLAYERS, 1, 1);
 	}
 	
 	//Mana Burst behavior is similar to Terra Blade but only hits 1 target because it needs to ignore iframes
-	public EntityManaBurst getBurst(Player player, ItemStack stack) {
-		EntityManaBurst burst = new EntityManaBurst(player);
+	public ManaBurstEntity getBurst(Player player, ItemStack stack) {
+		ManaBurstEntity burst = new ManaBurstEntity(player);
 
 		burst.setColor(0x20FF20);
 		burst.setMana(MANA_PER_DAMAGE);
@@ -83,12 +83,12 @@ public class TerraShotgun extends ShotgunItem implements ILensEffect {
 	public void apply(ItemStack stack, BurstProperties props, Level level) {}
 
 	@Override
-	public boolean collideBurst(IManaBurst burst, HitResult pos, boolean isManaBlock, boolean shouldKill, ItemStack stack) {
+	public boolean collideBurst(ManaBurst burst, HitResult pos, boolean isManaBlock, boolean shouldKill, ItemStack stack) {
 		return shouldKill;
 	}
 
 	@Override
-	public void updateBurst(IManaBurst burst, ItemStack stack) {
+	public void updateBurst(ManaBurst burst, ItemStack stack) {
 		//Still copying the Terra Blade but slightly different cause we need to ignore iframes
 		ThrowableProjectile entity = burst.entity();
 		AABB axis = new AABB(entity.getX(), entity.getY(), entity.getZ(), entity.xOld, entity.yOld, entity.zOld).inflate(1);
@@ -124,7 +124,7 @@ public class TerraShotgun extends ShotgunItem implements ILensEffect {
 	}
 	
 	@Override
-	public boolean doParticles(IManaBurst burst, ItemStack stack) {
+	public boolean doParticles(ManaBurst burst, ItemStack stack) {
 		return true;
 	}
 

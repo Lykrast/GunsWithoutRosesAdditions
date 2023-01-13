@@ -4,15 +4,15 @@ import lykrast.gunswithoutrosesadditions.CompatModids;
 import lykrast.gunswithoutrosesadditions.item.cloudstorage.BalloonBullet;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.registries.RegistryObject;
 
 public class CompatCloudStorage {
-	public static Item balloonBullet;
-	@ObjectHolder(CompatModids.CLOUD_STORAGE + ":balloon")
-	public static final EntityType<?> BALLOON = null;
+	public static RegistryObject<Item> balloonBullet;
+	@ObjectHolder(registryName = CompatModids.ENTITY, value = CompatModids.CLOUD_STORAGE + ":balloon")
+	public static EntityType<?> BALLOON = null;
 	
-	public static void registerItems(IForgeRegistry<Item> reg) {
-		balloonBullet = ModItems.initItem(reg, new BalloonBullet(ModItems.defP(), 5), "balloon_bullet");
+	public static void registerItems() {
+		balloonBullet = ModItems.initItem(() -> new BalloonBullet(ModItems.defP(), 5), "balloon_bullet");
 	}
 }
