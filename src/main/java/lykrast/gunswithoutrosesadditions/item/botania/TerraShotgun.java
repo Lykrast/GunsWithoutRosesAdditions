@@ -58,7 +58,7 @@ public class TerraShotgun extends ShotgunItem implements LensEffectItem {
 		super.shoot(world, player, gun, ammo, bulletItem, bulletFree);
 		//Copied from the Terra Blade
 		ManaBurstEntity burst = getBurst(player, gun);
-		player.level.addFreshEntity(burst);
+		player.level().addFreshEntity(burst);
 		//Can't really hear it in game so might as well not play it for subtitles
 		//player.level.playSound(null, player.getX(), player.getY(), player.getZ(), CompatBotaniaItems.BLADE_SOUND, SoundSource.PLAYERS, 1, 1);
 	}
@@ -92,7 +92,7 @@ public class TerraShotgun extends ShotgunItem implements LensEffectItem {
 		//Still copying the Terra Blade but slightly different cause we need to ignore iframes
 		ThrowableProjectile entity = burst.entity();
 		AABB axis = new AABB(entity.getX(), entity.getY(), entity.getZ(), entity.xOld, entity.yOld, entity.zOld).inflate(1);
-		List<LivingEntity> entities = entity.level.getEntitiesOfClass(LivingEntity.class, axis);
+		List<LivingEntity> entities = entity.level().getEntitiesOfClass(LivingEntity.class, axis);
 		Entity thrower = entity.getOwner();
 
 		for (LivingEntity living : entities) {
@@ -105,13 +105,13 @@ public class TerraShotgun extends ShotgunItem implements LensEffectItem {
 			if (mana >= cost) {
 				burst.setMana(mana - cost);
 				float damage = 7;
-				if (!burst.isFake() && !entity.level.isClientSide) {
-					DamageSource source = DamageSource.MAGIC;
+				if (!burst.isFake() && !entity.level().isClientSide) {
+					DamageSource source = living.damageSources().magic();
 					if (thrower instanceof Player player) {
-						source = DamageSource.playerAttack(player);
+						source = player.damageSources().playerAttack(player);
 					}
 					else if (thrower instanceof LivingEntity livingEntity) {
-						source = DamageSource.mobAttack(livingEntity);
+						source = livingEntity.damageSources().mobAttack(livingEntity);
 					}
 					int lastHurtResistant = living.invulnerableTime;
 					living.invulnerableTime = 0;

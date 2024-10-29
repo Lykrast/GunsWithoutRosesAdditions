@@ -18,6 +18,7 @@ public class GunsWithoutRosesAdditions {
 	public GunsWithoutRosesAdditions() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		ModItems.REG.register(bus);
+		bus.addListener(ModItems::addToCreativeTab);
 	}
 	
 	public static ResourceLocation rl(String name) {

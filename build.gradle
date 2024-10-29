@@ -83,12 +83,6 @@ minecraft {
 }
 
 repositories {
-    maven {
-        url "https://cursemaven.com"
-        content {
-            includeGroup "curse.maven"
-        }
-    }
 	maven {
         name = "Modrinth"
         url = "https://api.modrinth.com/maven"
@@ -104,25 +98,35 @@ repositories {
         name = "curios"
         url = "https://maven.theillusivec4.top/"
     }
+    maven {
+        name = "bumblezone"
+        url = 'https://nexus.resourcefulbees.com/repository/maven-public/'
+        content {
+            includeGroup 'com.telepathicgrunt'
+            includeGroup 'earth.terrarium.athena'
+        }
+    }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
 
-	implementation fg.deobf("maven.modrinth:guns-without-roses:${project.gwr_file}")
+	implementation fg.deobf("maven.modrinth:guns-without-roses:${project.gwr_version}")
 	
-    implementation fg.deobf("curse.maven:undergarden-379849:${project.undergarden_file}")
+    implementation fg.deobf("maven.modrinth:the-undergarden:${project.undergarden_version}")
 	
-    implementation fg.deobf("maven.modrinth:the-bumblezone:${project.bumblezone_file}")
+    implementation fg.deobf("com.telepathicgrunt:Bumblezone:${project.bumblezone_version}")
+    //Bumblezone dependency
+    implementation fg.deobf("earth.terrarium.athena:athena-forge-${project.athena_version}")
 	
     implementation fg.deobf("vazkii.botania:Botania:${project.botania_version}")
 	// Botania dependencies
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${project.curios_version}")
     runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${project.patchouli_version}")
 	
-    implementation fg.deobf("curse.maven:cloudstorage-606618:${project.cloudstorage_file}")
+    implementation fg.deobf("maven.modrinth:alexs-cloud-storage:${project.cloudstorage_version}")
 	// Cloud Storage dependency
-    implementation fg.deobf("curse.maven:citadel-331936:${project.citadel_file}")
+    runtimeOnly fg.deobf("maven.modrinth:citadel:${project.citadel_version}")
 }
 
 jar {
