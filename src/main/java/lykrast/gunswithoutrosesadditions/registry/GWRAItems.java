@@ -6,23 +6,20 @@ import java.util.function.Supplier;
 
 import lykrast.gunswithoutrosesadditions.CompatModids;
 import lykrast.gunswithoutrosesadditions.GunsWithoutRosesAdditions;
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.RegistryObject;
 
 public class GWRAItems {	
 	public static final DeferredRegister<Item> REG = DeferredRegister.create(ForgeRegistries.ITEMS, GunsWithoutRosesAdditions.MODID);
 	private static List<RegistryObject<? extends Item>> orderedItemsCreative = new ArrayList<>();
-	@ObjectHolder(registryName = CompatModids.CREATIVE_TAB, value = CompatModids.GWR + ":gunswithoutroses")
-	public static CreativeModeTab GWRTAB = null;
 	
 	public static void addToCreativeTab(BuildCreativeModeTabContentsEvent event) {
-		if (event.getTab() == GWRTAB) {
+		if (event.getTabKey().location().equals(new ResourceLocation(CompatModids.GWR, CompatModids.GWR))) {
 			orderedItemsCreative.forEach(i -> event.accept(i));
 		}
 	}
