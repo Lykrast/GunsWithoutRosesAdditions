@@ -3,7 +3,7 @@ package lykrast.gunswithoutrosesadditions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import lykrast.gunswithoutrosesadditions.registry.ModItems;
+import lykrast.gunswithoutrosesadditions.registry.GWRAItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -17,8 +17,8 @@ public class GunsWithoutRosesAdditions {
 	
 	public GunsWithoutRosesAdditions() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		ModItems.REG.register(bus);
-		bus.addListener(ModItems::addToCreativeTab);
+		GWRAItems.REG.register(bus);
+		bus.addListener(GWRAItems::addToCreativeTab);
 	}
 	
 	public static ResourceLocation rl(String name) {

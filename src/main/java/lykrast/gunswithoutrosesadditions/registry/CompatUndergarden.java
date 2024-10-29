@@ -11,10 +11,10 @@ public class CompatUndergarden {
 	public static RegistryObject<Item> utheriumBullet, froststeelBullet;
 	
 	public static void registerItems() {
-		utheriumBullet = ModItems.initItem(() -> new UtheriumBullet(ModItems.defP(), 7), "utherium_bullet");
+		utheriumBullet = GWRAItems.initItem(() -> new UtheriumBullet(GWRAItems.defP(), 7), "utherium_bullet");
 		//Though for real why "Froststeel" when you could have "Frosteel"?
 		//Same slow as the tools because ranged is safer than the melee weapons for same as the sword and axe it would be:
 		//target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 2));
-		froststeelBullet = ModItems.initItem(() -> new EffectBullet(ModItems.defP(), 7, () -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 1)), "froststeel_bullet");
+		froststeelBullet = GWRAItems.initItem(() -> new EffectBullet(GWRAItems.defP(), 7, () -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 1)), "froststeel_bullet");
 	}
 }

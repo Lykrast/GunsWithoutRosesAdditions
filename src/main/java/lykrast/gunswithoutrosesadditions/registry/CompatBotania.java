@@ -32,11 +32,11 @@ public class CompatBotania {
 	public static Item ELEMENTIUM_HELMET = null;
 	
 	public static void registerItems() {
-		manasteelGun = ModItems.initItem(() -> new ManaGun(ModItems.defP().durability(616), 0, 1, 16, 1.5, 20).repair(() -> Ingredient.of(MANASTEEL)), "manasteel_gun");
-		elementiumGun = ModItems.initItem(() -> new ManaGun(ModItems.defP().durability(1477), 0, 1, 16, 1.5, 20).chanceFreeShot(0.5).repair(() -> Ingredient.of(ELEMENTIUM)), "elementium_gun");
-		terraShotgun = ModItems.initItem(() -> new TerraShotgun(ModItems.defP().durability(3058).fireResistant().rarity(Rarity.UNCOMMON), 0, 0.5, 20, 7, 26, 4).fireSound(GWRSounds.shotgun).repair(() -> Ingredient.of(TERRASTEEL)), "terra_shotgun");
+		manasteelGun = GWRAItems.initItem(() -> new ManaGun(GWRAItems.defP().durability(616), 0, 1, 16, 1.5, 20).repair(() -> Ingredient.of(MANASTEEL)), "manasteel_gun");
+		elementiumGun = GWRAItems.initItem(() -> new ManaGun(GWRAItems.defP().durability(1477), 0, 1, 16, 1.5, 20).chanceFreeShot(0.5).repair(() -> Ingredient.of(ELEMENTIUM)), "elementium_gun");
+		terraShotgun = GWRAItems.initItem(() -> new TerraShotgun(GWRAItems.defP().durability(3058).fireResistant().rarity(Rarity.UNCOMMON), 0, 0.5, 20, 7, 26, 4).fireSound(GWRSounds.shotgun).repair(() -> Ingredient.of(TERRASTEEL)), "terra_shotgun");
 		
-		manasteelBullet = ModItems.initItem(() -> new BulletItem(ModItems.defP(), 7), "manasteel_bullet");
-		elementiumBullet = ModItems.initItem(() -> new ElementiumBullet(ModItems.defP(), 7), "elementium_bullet");
+		manasteelBullet = GWRAItems.initItem(() -> new BulletItem(GWRAItems.defP(), 7), "manasteel_bullet");
+		elementiumBullet = GWRAItems.initItem(() -> new ElementiumBullet(GWRAItems.defP(), 7), "elementium_bullet");
 	}
 }

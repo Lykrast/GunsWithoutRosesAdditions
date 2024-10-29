@@ -15,7 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModItems {	
+public class GWRAItems {	
 	public static final DeferredRegister<Item> REG = DeferredRegister.create(ForgeRegistries.ITEMS, GunsWithoutRosesAdditions.MODID);
 	private static List<RegistryObject<? extends Item>> orderedItemsCreative = new ArrayList<>();
 	@ObjectHolder(registryName = CompatModids.CREATIVE_TAB, value = CompatModids.GWR + ":gunswithoutroses")

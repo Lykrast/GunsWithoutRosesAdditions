@@ -13,6 +13,6 @@ public class CompatCloudStorage {
 	public static EntityType<?> BALLOON = null;
 	
 	public static void registerItems() {
-		balloonBullet = ModItems.initItem(() -> new BalloonBullet(ModItems.defP(), 5), "balloon_bullet");
+		balloonBullet = GWRAItems.initItem(() -> new BalloonBullet(GWRAItems.defP(), 5), "balloon_bullet");
 	}
 }

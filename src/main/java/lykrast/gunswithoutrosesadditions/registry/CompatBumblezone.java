@@ -14,6 +14,6 @@ public class CompatBumblezone {
 	public static MobEffect WRATH = null;
 	
 	public static void registerItems() {
-		honeyCrystalBullet = ModItems.initItem(() -> new EffectBullet(ModItems.defP(), 6, () -> new MobEffectInstance(WRATH, 20*60, 0)), "honey_crystal_bullet");
+		honeyCrystalBullet = GWRAItems.initItem(() -> new EffectBullet(GWRAItems.defP(), 6, () -> new MobEffectInstance(WRATH, 20*60, 0)), "honey_crystal_bullet");
 	}
 }
