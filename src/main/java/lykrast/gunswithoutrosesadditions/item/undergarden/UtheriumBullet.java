@@ -17,6 +17,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import quek.undergarden.registry.UGTags;
 
 public class UtheriumBullet extends BulletItem {
+	private static final double MULTIPLIER = 1.5;
 
 	public UtheriumBullet(Properties properties, int damage) {
 		super(properties, damage);
@@ -24,14 +25,14 @@ public class UtheriumBullet extends BulletItem {
 
 	@Override
 	public double modifyDamage(double damage, BulletEntity projectile, Entity target, @Nullable Entity shooter, Level world) {
-		return target.getType().is(UGTags.Entities.ROTSPAWN) ? damage * 1.5 : damage;
+		return target.getType().is(UGTags.Entities.ROTSPAWN) ? damage * MULTIPLIER : damage;
 	}
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) {
 		super.appendHoverText(stack, worldIn, tooltip, flagIn);
-		tooltip.add(Component.translatable(getDescriptionId(stack) + ".desc").withStyle(ChatFormatting.GRAY));
+		tooltip.add(Component.translatable(getDescriptionId(stack) + ".desc", (int)((MULTIPLIER-1)*100)).withStyle(ChatFormatting.GRAY));
 	}
 
 }

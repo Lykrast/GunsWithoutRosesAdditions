@@ -28,6 +28,7 @@ import vazkii.botania.common.item.equipment.tool.ToolCommons;
 public class TerraShotgun extends ShotgunItem implements LensEffectItem {
 	//Match the Terra Blade
 	private static final int MANA_PER_DAMAGE = 100;
+	private static final int BURST_DAMAGE = 7;
 
 	public TerraShotgun(Properties properties, int bonusDamage, double damageMultiplier, int fireDelay, double inaccuracy, int enchantability, int bulletCount) {
 		super(properties, bonusDamage, damageMultiplier, fireDelay, inaccuracy, enchantability, bulletCount);
@@ -49,7 +50,7 @@ public class TerraShotgun extends ShotgunItem implements LensEffectItem {
 	@Override
 	protected void addExtraStatsTooltip(ItemStack stack, @Nullable Level world, List<Component> tooltip) {
 		super.addExtraStatsTooltip(stack, world, tooltip);
-		tooltip.add(Component.translatable(getDescriptionId() + ".desc").withStyle(ChatFormatting.GRAY));
+		tooltip.add(Component.translatable(getDescriptionId() + ".desc", BURST_DAMAGE).withStyle(ChatFormatting.GRAY));
 		tooltip.add(Component.translatable(ManaGun.MANA_REPAIR).withStyle(ChatFormatting.GRAY));
 	}
 	
@@ -104,7 +105,7 @@ public class TerraShotgun extends ShotgunItem implements LensEffectItem {
 			int mana = burst.getMana();
 			if (mana >= cost) {
 				burst.setMana(mana - cost);
-				float damage = 7;
+				float damage = BURST_DAMAGE;
 				if (!burst.isFake() && !entity.level().isClientSide) {
 					DamageSource source = living.damageSources().magic();
 					if (thrower instanceof Player player) {

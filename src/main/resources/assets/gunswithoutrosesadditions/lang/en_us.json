@@ -1,6 +1,6 @@
 {
 	"item.gunswithoutrosesadditions.utherium_bullet": "Utherium Bullet",
-	"item.gunswithoutrosesadditions.utherium_bullet.desc": "x1.5 damage to Rotspawn",
+	"item.gunswithoutrosesadditions.utherium_bullet.desc": "+%1$d%% damage to Rotspawn",
 	"item.gunswithoutrosesadditions.froststeel_bullet": "Froststeel Bullet",
 	"item.gunswithoutrosesadditions.froststeel_bullet.desc": "Slows on hit",
 	
@@ -11,11 +11,11 @@
 	"item.gunswithoutrosesadditions.manasteel_gun.desc": "Repairs itself using Mana",
 	"item.gunswithoutrosesadditions.elementium_gun": "Elementium Gun",
 	"item.gunswithoutrosesadditions.terra_shotgun": "Terra Blaster",
-	"item.gunswithoutrosesadditions.terra_shotgun.desc": "Also fires a Mana Burst",
+	"item.gunswithoutrosesadditions.terra_shotgun.desc": "Also fires a Mana Burst dealing %1$d damage",
 	"item.gunswithoutrosesadditions.manasteel_bullet": "Manasteel Bullet",
 	"item.gunswithoutrosesadditions.elementium_bullet": "Elementium Bullet",
 	"item.gunswithoutrosesadditions.elementium_bullet.desc": "Benefits from Pixie buffs",
 	
 	"item.gunswithoutrosesadditions.balloon_bullet": "Balloon Bullet",
-	"item.gunswithoutrosesadditions.balloon_bullet.desc": "Ties a balloon on target"
+	"item.gunswithoutrosesadditions.balloon_bullet.desc": "Ties a balloon to the target"
 }
