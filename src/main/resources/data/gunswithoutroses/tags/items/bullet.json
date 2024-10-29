@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		{ "id": "gunswithoutrosesadditions:utherium_bullet", "required": false },
+		{ "id": "gunswithoutrosesadditions:froststeel_bullet", "required": false },
+		{ "id": "gunswithoutrosesadditions:honey_crystal_bullet", "required": false },
+		{ "id": "gunswithoutrosesadditions:manasteel_bullet", "required": false },
+		{ "id": "gunswithoutrosesadditions:elementium_bullet", "required": false },
+		{ "id": "gunswithoutrosesadditions:balloon_bullet", "required": false }
+	]
+}
