@@ -43,7 +43,8 @@ public class ElementiumBullet extends BulletItem {
 	
 	//Armor set bonus
 	@Override
-	public void onLivingEntityHit(BulletEntity projectile, LivingEntity target, @Nullable Entity shooter, Level world) {
+	public void onLivingEntityHit(BulletEntity projectile, LivingEntity target, @Nullable Entity shooter, Level world, boolean headshot) {
+		super.onLivingEntityHit(projectile, target, shooter, world, headshot);
 		if (shooter instanceof Player && ((ElementiumHelmItem)CompatBotania.ELEMENTIUM_HELMET).hasArmorSet((Player)shooter)) {
 			//Pixies are 40 ticks I'm making it a lil longer here
 			target.addEffect(new MobEffectInstance(POTIONS[world.random.nextInt(POTIONS.length)], 80, 0));

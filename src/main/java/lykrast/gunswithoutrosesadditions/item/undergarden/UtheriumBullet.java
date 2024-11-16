@@ -24,7 +24,7 @@ public class UtheriumBullet extends BulletItem {
 	}
 
 	@Override
-	public double modifyDamage(double damage, BulletEntity projectile, Entity target, @Nullable Entity shooter, Level world) {
+	public double modifyDamage(double damage, BulletEntity projectile, Entity target, @Nullable Entity shooter, Level world, boolean headshot) {
 		return target.getType().is(UGTags.Entities.ROTSPAWN) ? damage * MULTIPLIER : damage;
 	}
 

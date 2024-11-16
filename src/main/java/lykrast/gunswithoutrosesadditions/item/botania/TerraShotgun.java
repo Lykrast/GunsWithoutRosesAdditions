@@ -5,8 +5,8 @@ import java.util.function.Consumer;
 
 import javax.annotation.Nullable;
 
+import lykrast.gunswithoutroses.item.GunItem;
 import lykrast.gunswithoutroses.item.IBullet;
-import lykrast.gunswithoutroses.item.ShotgunItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
@@ -25,13 +25,13 @@ import vazkii.botania.api.mana.ManaItemHandler;
 import vazkii.botania.common.entity.ManaBurstEntity;
 import vazkii.botania.common.item.equipment.tool.ToolCommons;
 
-public class TerraShotgun extends ShotgunItem implements LensEffectItem {
+public class TerraShotgun extends GunItem implements LensEffectItem {
 	//Match the Terra Blade
 	private static final int MANA_PER_DAMAGE = 100;
 	private static final int BURST_DAMAGE = 7;
 
-	public TerraShotgun(Properties properties, int bonusDamage, double damageMultiplier, int fireDelay, double inaccuracy, int enchantability, int bulletCount) {
-		super(properties, bonusDamage, damageMultiplier, fireDelay, inaccuracy, enchantability, bulletCount);
+	public TerraShotgun(Properties properties, int bonusDamage, double damageMultiplier, int fireDelay, double inaccuracy, int enchantability) {
+		super(properties, bonusDamage, damageMultiplier, fireDelay, inaccuracy, enchantability);
 	}
 	
 	//Copied from Manasteel tools cause we need the same behavior

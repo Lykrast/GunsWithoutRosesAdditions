@@ -27,7 +27,8 @@ public class EffectBullet extends BulletItem {
 	}
 	
 	@Override
-	public void onLivingEntityHit(BulletEntity projectile, LivingEntity target, @Nullable Entity shooter, Level world) {
+	public void onLivingEntityHit(BulletEntity projectile, LivingEntity target, @Nullable Entity shooter, Level world, boolean headshot) {
+		super.onLivingEntityHit(projectile, target, shooter, world, headshot);
 		target.addEffect(effect.get());
 	}
 

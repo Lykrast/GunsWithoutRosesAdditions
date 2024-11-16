@@ -30,7 +30,8 @@ public class BalloonBullet extends BulletItem {
 	}
 
 	@Override
-	public void onLivingEntityHit(BulletEntity projectile, LivingEntity target, @Nullable Entity shooter, Level world) {
+	public void onLivingEntityHit(BulletEntity projectile, LivingEntity target, @Nullable Entity shooter, Level world, boolean headshot) {
+		super.onLivingEntityHit(projectile, target, shooter, world, headshot);
 		//Same behavior as a balloon arrow
 		BalloonEntity balloon = (BalloonEntity) CompatCloudStorage.BALLOON.create(world);
 		balloon.setPos(target.getX(), target.getY(1.0), target.getZ());

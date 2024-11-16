@@ -34,7 +34,7 @@ public class CompatBotania {
 	public static void registerItems() {
 		manasteelGun = GWRAItems.initItem(() -> new ManaGun(GWRAItems.defP().durability(616), 0, 1, 16, 2, 20).repair(() -> Ingredient.of(MANASTEEL)), "manasteel_gun");
 		elementiumGun = GWRAItems.initItem(() -> new ManaGun(GWRAItems.defP().durability(1477), 0, 1, 16, 2, 20).chanceFreeShot(0.5).repair(() -> Ingredient.of(ELEMENTIUM)), "elementium_gun");
-		terraShotgun = GWRAItems.initItem(() -> new TerraShotgun(GWRAItems.defP().durability(3058).fireResistant().rarity(Rarity.UNCOMMON), 0, 0.75, 24, 7, 26, 3).fireSound(GWRSounds.shotgun).repair(() -> Ingredient.of(TERRASTEEL)), "terra_shotgun");
+		terraShotgun = GWRAItems.initItem(() -> new TerraShotgun(GWRAItems.defP().durability(3058).fireResistant().rarity(Rarity.UNCOMMON), 0, 0.75, 24, 7, 26).projectiles(3).fireSound(GWRSounds.shotgun).repair(() -> Ingredient.of(TERRASTEEL)), "terra_shotgun");
 		
 		manasteelBullet = GWRAItems.initItem(() -> new BulletItem(GWRAItems.defP(), 7), "manasteel_bullet");
 		elementiumBullet = GWRAItems.initItem(() -> new ElementiumBullet(GWRAItems.defP(), 7), "elementium_bullet");
