@@ -15,9 +15,9 @@ apply plugin: 'maven-publish'
 
 apply from: 'https://raw.githubusercontent.com/SizableShrimp/Forge-Class-Remapper/main/classremapper.gradle'
 
-version = "${project.minecraft_version}-${project.mod_version}"
+version = "${project.mod_version}"
 group = "lykrast.gunswithoutrosesadditions"
-archivesBaseName = "gunswithoutrosesadditions"
+archivesBaseName = "gunswithoutrosesadditions-${project.minecraft_version}"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 

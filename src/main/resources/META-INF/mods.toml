@@ -8,6 +8,7 @@ modId="gunswithoutrosesadditions"
 version="${file.jarVersion}"
 displayName="Guns Without Roses Additions"
 displayURL="https://modrinth.com/mod/guns-without-roses-additions"
+logoFile="logo.png"
 credits=""
 authors="Lykrast"
 description='''
@@ -23,12 +24,12 @@ Compatibility between Guns Without Roses and an assortment of random mods.
 [[dependencies.gunswithoutrosesadditions]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2,]"
+    versionRange="[1.20.1,]"
     ordering="NONE"
     side="BOTH"
 [[dependencies.gunswithoutrosesadditions]]
     modId="gunswithoutroses"
     mandatory=true
-    versionRange="[1.19-1.1.1,)"
+    versionRange="[1.20.1-2.4.0,)"
     ordering="AFTER"
     side="BOTH"
