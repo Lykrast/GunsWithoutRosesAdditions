@@ -106,6 +106,18 @@ repositories {
             includeGroup 'earth.terrarium.athena'
         }
     }
+    maven {
+        name = "aether" //this is a fucking 404 are you jokering for real
+        url = "https://packages.aether-mod.net/The-Aether"
+    }
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+                includeGroupByRegex("software\\.bernie.*")
+                includeGroup("com.eliotlash.mclib")
+        }
+    }
 }
 
 dependencies {
@@ -127,6 +139,21 @@ dependencies {
     implementation fg.deobf("maven.modrinth:alexs-cloud-storage:${project.cloudstorage_version}")
 	// Cloud Storage dependency
     runtimeOnly fg.deobf("maven.modrinth:citadel:${project.citadel_version}")
+
+    //Aether + its fuckass dependencies (I'm not sure I use any code from it so that's mostly for addons)
+    //implementation fg.deobf("com.aetherteam.aether:aether:${project.aether_version}") //does not work >:(
+    implementation fg.deobf("maven.modrinth:aether:${project.aether_version}") //I love you modrinth maven
+    //implementation fg.deobf("com.aetherteam.nitrogen:nitrogen_internals:${project.nitrogen_version}")
+    //implementation fg.deobf("com.aetherteam.cumulus:cumulus_menus:${project.cumulus_version}")
+    //other dependencies for the aether addons
+    implementation fg.deobf("com.github.glitchfiend:TerraBlender-forge:${project.terrablender_version}")
+    implementation fg.deobf("maven.modrinth:aeroblender:${project.aeroblender_version}")
+    implementation fg.deobf("software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}")
+    implementation("com.eliotlash.mclib:mclib:20")
+
+    //now the actual aether addons
+    implementation fg.deobf("maven.modrinth:the-aether-redux:${project.aether_redux_version}")
+    implementation fg.deobf("maven.modrinth:deep-aether:${project.deep_aether_version}")
 }
 
 jar {
