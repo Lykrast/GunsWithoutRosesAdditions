@@ -150,10 +150,13 @@ dependencies {
     implementation fg.deobf("maven.modrinth:aeroblender:${project.aeroblender_version}")
     implementation fg.deobf("software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}")
     implementation("com.eliotlash.mclib:mclib:20")
+    implementation fg.deobf("maven.modrinth:farmers-delight:${project.farmers_delight_version}")
 
     //now the actual aether addons
     implementation fg.deobf("maven.modrinth:the-aether-redux:${project.aether_redux_version}")
     implementation fg.deobf("maven.modrinth:deep-aether:${project.deep_aether_version}")
+    //and this one needs farmer's delight too
+    implementation fg.deobf("maven.modrinth:the-aethers-delight:${project.aethers_delight_version}")
 }
 
 jar {
