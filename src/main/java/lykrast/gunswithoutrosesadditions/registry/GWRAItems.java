@@ -29,6 +29,12 @@ public class GWRAItems {
 		if (ModList.get().isLoaded(CompatModids.BUMBLEZONE)) CompatBumblezone.registerItems();
 		if (ModList.get().isLoaded(CompatModids.BOTANIA)) CompatBotania.registerItems();
 		if (ModList.get().isLoaded(CompatModids.CLOUD_STORAGE)) CompatCloudStorage.registerItems();
+		if (ModList.get().isLoaded(CompatModids.AETHER)) {
+			CompatAether.registerItems();
+			if (ModList.get().isLoaded(CompatModids.DEEP_AETHER)) CompatDeepAether.registerItems();
+			if (ModList.get().isLoaded(CompatModids.AETHER_REDUX)) CompatAetherRedux.registerItems();
+			if (ModList.get().isLoaded(CompatModids.AETHERS_DELIGHT)) CompatAethersDelight.registerItems();
+		}
 	}
 
 	public static Item.Properties defP() {
