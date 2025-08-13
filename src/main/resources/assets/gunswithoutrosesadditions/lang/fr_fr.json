@@ -23,17 +23,17 @@
 	"item.gunswithoutrosesadditions.zanite_gun.desc": "Les dégâts augmentent quand la durabilité baisse",
 	"item.gunswithoutrosesadditions.zanite_gun.cap": "Maximum : %s",
 	"item.gunswithoutrosesadditions.zanite_bullet": "Balle en zanite",
-	"lore.item.gunswithoutrosesadditions.zanite_gun": "Un pistolet fait de matériaux de l'Aether. Le zanite augmente sa puissance de feu au fur et à mesure qu'il se détériore.",
-	"lore.item.gunswithoutrosesadditions.zanite_bullet": "Des balles sculptées dans du zanite. Elles ne dureront pas assez longtemps pour bénéficier des effets du zanite, mais elles resteront aussi efficace que des balles en fer.",
+	"lore.item.gunswithoutrosesadditions.zanite_gun": "Une arme en zanite n'est pas achevée tant que l'usure n'a pas révélé sa vraie force. Un jour ce pistolet aura une puissance de feu formidable.",
+	"lore.item.gunswithoutrosesadditions.zanite_bullet": "Une balle ne dure pas assez longtemps pour libérer la puissance du zanite, mais elle reste un projectile efficace.",
 
 	"item.gunswithoutrosesadditions.skyjade_gun": "Fusil en jade céleste",
 	"item.gunswithoutrosesadditions.skyjade_gun.desc": "Les dégâts diminuent avec la durabilité",
 	"item.gunswithoutrosesadditions.skyjade_gun.cap": "Minimum : %s",
-	"lore.item.gunswithoutrosesadditions.skyjade_gun": "Un pistolet fait de matériaux de l'Aether. La jade céleste lui confère une grande puissance de feu, mais il se détériorera rapidement.",
+	"lore.item.gunswithoutrosesadditions.skyjade_gun": "L'éclat vert de la jade céleste est un signe de sa puissance, mais aussi de sa fragilité. Quelque chose à chérir avant qu'il ne se dissipe dans le vent.",
 
 	"item.gunswithoutrosesadditions.arkenium_gun": "Fusil en arkénium",
 	"item.gunswithoutrosesadditions.arkenium_bullet": "Balle en arkénium",
 	"tooltip.gunswithoutrosesadditions.bullet.base": "Compte comme balle en fer",
-	"lore.item.gunswithoutrosesadditions.arkenium_gun": "Un pistolet fait de matériaux de l'Aether. L'arkénium substitue le fer à la perfection, ce qui le rends équivalent à un fusil en fer.",
-	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "Des balles faites en arkénium, qui substitue le fer à la perfection. Elles sont équivalentes à des balles en fer, même pour la fabrication."
+	"lore.item.gunswithoutrosesadditions.arkenium_gun": "Travailler l'arkénium semble étrangement familier. En fermant les yeux il serait difficile de le distinguer d'un fusil en fer.",
+	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "La similarité entre l'arkénium et le fer est impressionnante. On pourrait facilement confondre ces balles avec des balles en fer."
 }

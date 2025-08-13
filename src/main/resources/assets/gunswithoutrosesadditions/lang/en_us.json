@@ -23,17 +23,17 @@
 	"item.gunswithoutrosesadditions.zanite_gun.desc": "Damage increases as durability lowers",
 	"item.gunswithoutrosesadditions.zanite_gun.cap": "Maximum: %s",
 	"item.gunswithoutrosesadditions.zanite_bullet": "Zanite Bullet",
-	"lore.item.gunswithoutrosesadditions.zanite_gun": "A pistol made of materials from the Aether. Being made of Zanite, its firepower increases the more damaged it gets.",
-	"lore.item.gunswithoutrosesadditions.zanite_bullet": "Bullets carved from Zanite. They won't last long enough to use Zanite's unique properties, but will work just as good as Iron Bullets.",
+	"lore.item.gunswithoutrosesadditions.zanite_gun": "A Zanite weapon is not finished until wear and tear reveals its true strength. One day this pistol will hold tremendous firepower.",
+	"lore.item.gunswithoutrosesadditions.zanite_bullet": "A bullet will not last long enough to benefit from Zanite's unique strength, but it remains an effective projectile.",
 
 	"item.gunswithoutrosesadditions.skyjade_gun": "Skyjade Gun",
 	"item.gunswithoutrosesadditions.skyjade_gun.desc": "Damage decreases as durability lowers",
 	"item.gunswithoutrosesadditions.skyjade_gun.cap": "Minimum: %s",
-	"lore.item.gunswithoutrosesadditions.skyjade_gun": "A pistol made of materials from the Aether. Being made of Skyjade, it has incredible firepower but will quickly deteriorate with usage.",
+	"lore.item.gunswithoutrosesadditions.skyjade_gun": "The green glint of Skyjade is a reminder of its strength, but also its fragility. Something to cherish before it fades in the wind.",
 
 	"item.gunswithoutrosesadditions.arkenium_gun": "Arkenium Gun",
 	"item.gunswithoutrosesadditions.arkenium_bullet": "Arkenium Bullet",
 	"tooltip.gunswithoutrosesadditions.bullet.base": "Counts as Iron Bullet",
-	"lore.item.gunswithoutrosesadditions.arkenium_gun": "A pistol made of materials from the Aether. Arkenium perfectly substitutes Iron, making it equivalent to an Iron Gun.",
-	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "Bullets made of Arkenium, which perfectly substitutes Iron. This makes them equivalement to Iron Bullets, even for crafting."
+	"lore.item.gunswithoutrosesadditions.arkenium_gun": "Working Arkenium feels oddly familiar. With your eyes closed it would be hard to tell it apart from an Iron Gun.",
+	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "It's impressive how similar Arkenium feels to Iron. These bullets could easily pass for Iron Bullets."
 }
