@@ -22,10 +22,11 @@ public class SkyjadeGunItem extends GunItem {
 	
 	public static double getNormalizedSkyjadeBonus(ItemStack gun) {
 		//original formula with all doubles (baseDamage / (2.0 * stack.getDamageValue() / stack.getMaxDamage() + 0.5))-baseDamage, min 0
-		//therefore multiplier is between 0 and 2, so normalize that to 0 to 1
-		double mult = 1 / (2.0 * (double)gun.getDamageValue() / (double)gun.getMaxDamage() + 0.5);
+		//therefore multiplier is between 0 and 1, which is actually already normalized
+		//it is such a harsh curve...
+		double mult = 1 / (2.0 * (double)gun.getDamageValue() / (double)gun.getMaxDamage() + 0.5) - 1;
 		if (mult <= 0) return 0;
-		else return mult / 2.0;
+		else return mult;
 	}
 	
 
