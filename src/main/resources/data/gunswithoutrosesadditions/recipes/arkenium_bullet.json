@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{ "item": "aethersdelight:arkenium_ingot" },
+		{ "item": "aethersdelight:arkenium_ingot" },
+		{ "item": "aethersdelight:arkenium_ingot" },
+		{ "item": "aethersdelight:arkenium_ingot" },
+        { "tag": "forge:gunpowder" }
+    ],
+	"result": { "item": "gunswithoutrosesadditions:arkenium_bullet", "count": 32 },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "aethersdelight" }]
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{ "tag": "aether:gems/zanite" },
+		{ "tag": "aether:gems/zanite" },
+		{ "tag": "aether:gems/zanite" },
+		{ "tag": "aether:gems/zanite" },
+        { "tag": "forge:gunpowder" }
+    ],
+	"result": { "item": "gunswithoutrosesadditions:zanite_bullet", "count": 32 },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "aether" }]
+}

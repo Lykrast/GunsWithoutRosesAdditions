@@ -2,6 +2,9 @@
 	"replace": false,
 	"values": [
 		{ "id": "gunswithoutrosesadditions:manasteel_gun", "required": false },
-		{ "id": "gunswithoutrosesadditions:elementium_gun", "required": false }
+		{ "id": "gunswithoutrosesadditions:elementium_gun", "required": false },
+		{ "id": "gunswithoutrosesadditions:zanite_gun", "required": false },
+		{ "id": "gunswithoutrosesadditions:skyjade_gun", "required": false },
+		{ "id": "gunswithoutrosesadditions:arkenium_gun", "required": false }
 	]
 }

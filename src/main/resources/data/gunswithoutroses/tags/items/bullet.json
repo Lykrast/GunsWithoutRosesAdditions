@@ -6,6 +6,8 @@
 		{ "id": "gunswithoutrosesadditions:honey_crystal_bullet", "required": false },
 		{ "id": "gunswithoutrosesadditions:manasteel_bullet", "required": false },
 		{ "id": "gunswithoutrosesadditions:elementium_bullet", "required": false },
-		{ "id": "gunswithoutrosesadditions:balloon_bullet", "required": false }
+		{ "id": "gunswithoutrosesadditions:balloon_bullet", "required": false },
+		{ "id": "gunswithoutrosesadditions:zanite_bullet", "required": false },
+		{ "id": "gunswithoutrosesadditions:arkenium_bullet", "required": false }
 	]
 }

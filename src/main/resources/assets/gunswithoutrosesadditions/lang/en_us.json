@@ -17,5 +17,17 @@
 	"item.gunswithoutrosesadditions.elementium_bullet.desc": "Benefits from Pixie buffs",
 	
 	"item.gunswithoutrosesadditions.balloon_bullet": "Balloon Bullet",
-	"item.gunswithoutrosesadditions.balloon_bullet.desc": "Ties a balloon to the target"
+	"item.gunswithoutrosesadditions.balloon_bullet.desc": "Ties a balloon to the target",
+
+	"item.gunswithoutrosesadditions.zanite_gun": "Zanite Gun",
+	"item.gunswithoutrosesadditions.zanite_gun.desc": "Damage increases as durability lowers",
+	"item.gunswithoutrosesadditions.zanite_gun.cap": "Maximum %s",
+	"item.gunswithoutrosesadditions.zanite_bullet": "Zanite Bullet",
+
+	"item.gunswithoutrosesadditions.skyjade_gun": "Skyjade Gun",
+	"item.gunswithoutrosesadditions.skyjade_gun.desc": "Damage decreases as durability lowers",
+	"item.gunswithoutrosesadditions.skyjade_gun.cap": "Minimum %s",
+
+	"item.gunswithoutrosesadditions.arkenium_gun": "Arkenium Gun",
+	"item.gunswithoutrosesadditions.arkenium_bullet": "Arkenium Bullet"
 }

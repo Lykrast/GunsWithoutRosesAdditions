@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"I  ",
+		"SIF",
+		" SI"
+	],
+	"key": {
+		"I": { "tag": "aether:gems/zanite" },
+		"S": { "tag": "aether:skyroot_stick" },
+		"F": { "item": "aether:golden_amber" }
+	},
+	"result": { "item": "gunswithoutrosesadditions:zanite_gun" },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "aether" }]
+}
