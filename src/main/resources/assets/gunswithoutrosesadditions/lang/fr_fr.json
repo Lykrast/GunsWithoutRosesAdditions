@@ -17,5 +17,23 @@
 	"item.gunswithoutrosesadditions.elementium_bullet.desc": "Bénéficie des bonus des fées",
 	
 	"item.gunswithoutrosesadditions.balloon_bullet": "Balle ballon",
-	"item.gunswithoutrosesadditions.balloon_bullet.desc": "Attache un ballon à la cible"
+	"item.gunswithoutrosesadditions.balloon_bullet.desc": "Attache un ballon à la cible",
+
+	"item.gunswithoutrosesadditions.zanite_gun": "Fusil en zanite",
+	"item.gunswithoutrosesadditions.zanite_gun.desc": "Les dégâts augmentent quand la durabilité baisse",
+	"item.gunswithoutrosesadditions.zanite_gun.cap": "Maximum : %s",
+	"item.gunswithoutrosesadditions.zanite_bullet": "Balle en zanite",
+	"lore.item.gunswithoutrosesadditions.zanite_gun": "Un pistolet fait de matériaux de l'Aether. Le zanite augmente sa puissance de feu au fur et à mesure qu'il se détériore.",
+	"lore.item.gunswithoutrosesadditions.zanite_bullet": "Des balles sculptées dans du zanite. Elles ne dureront pas assez longtemps pour bénéficier des effets du zanite, mais elles resteront aussi efficace que des balles en fer.",
+
+	"item.gunswithoutrosesadditions.skyjade_gun": "Fusil en jade céleste",
+	"item.gunswithoutrosesadditions.skyjade_gun.desc": "Les dégâts diminuent avec la durabilité",
+	"item.gunswithoutrosesadditions.skyjade_gun.cap": "Minimum : %s",
+	"lore.item.gunswithoutrosesadditions.skyjade_gun": "Un pistolet fait de matériaux de l'Aether. La jade céleste lui confère une grande puissance de feu, mais il se détériorera rapidement.",
+
+	"item.gunswithoutrosesadditions.arkenium_gun": "Fusil en arkénium",
+	"item.gunswithoutrosesadditions.arkenium_bullet": "Balle en arkénium",
+	"tooltip.gunswithoutrosesadditions.bullet.base": "Compte comme balle en fer",
+	"lore.item.gunswithoutrosesadditions.arkenium_gun": "Un pistolet fait de matériaux de l'Aether. L'arkénium substitue le fer à la perfection, ce qui le rends équivalent à un fusil en fer.",
+	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "Des balles faites en arkénium, qui substitue le fer à la perfection. Elles sont équivalentes à des balles en fer, même pour la fabrication."
 }

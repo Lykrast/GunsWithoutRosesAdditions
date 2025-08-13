@@ -1,5 +1,4 @@
 {
-	"replace": false,
 	"values": [
 		{ "id": "gunswithoutrosesadditions:manasteel_gun", "required": false },
 		{ "id": "gunswithoutrosesadditions:elementium_gun", "required": false },

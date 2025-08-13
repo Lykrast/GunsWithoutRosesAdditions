@@ -23,11 +23,17 @@
 	"item.gunswithoutrosesadditions.zanite_gun.desc": "Damage increases as durability lowers",
 	"item.gunswithoutrosesadditions.zanite_gun.cap": "Maximum: %s",
 	"item.gunswithoutrosesadditions.zanite_bullet": "Zanite Bullet",
+	"lore.item.gunswithoutrosesadditions.zanite_gun": "A pistol made of materials from the Aether. Being made of Zanite, its firepower increases the more damaged it gets.",
+	"lore.item.gunswithoutrosesadditions.zanite_bullet": "Bullets carved from Zanite. They won't last long enough to use Zanite's unique properties, but will work just as good as Iron Bullets.",
 
 	"item.gunswithoutrosesadditions.skyjade_gun": "Skyjade Gun",
 	"item.gunswithoutrosesadditions.skyjade_gun.desc": "Damage decreases as durability lowers",
 	"item.gunswithoutrosesadditions.skyjade_gun.cap": "Minimum: %s",
+	"lore.item.gunswithoutrosesadditions.skyjade_gun": "A pistol made of materials from the Aether. Being made of Skyjade, it has incredible firepower but will quickly deteriorate with usage.",
 
 	"item.gunswithoutrosesadditions.arkenium_gun": "Arkenium Gun",
-	"item.gunswithoutrosesadditions.arkenium_bullet": "Arkenium Bullet"
+	"item.gunswithoutrosesadditions.arkenium_bullet": "Arkenium Bullet",
+	"tooltip.gunswithoutrosesadditions.bullet.base": "Counts as Iron Bullet",
+	"lore.item.gunswithoutrosesadditions.arkenium_gun": "A pistol made of materials from the Aether. Arkenium perfectly substitutes Iron, making it equivalent to an Iron Gun.",
+	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "Bullets made of Arkenium, which perfectly substitutes Iron. This makes them equivalement to Iron Bullets, even for crafting."
 }

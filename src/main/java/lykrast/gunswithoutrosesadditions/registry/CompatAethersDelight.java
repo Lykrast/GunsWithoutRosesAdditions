@@ -1,8 +1,8 @@
 package lykrast.gunswithoutrosesadditions.registry;
 
-import lykrast.gunswithoutroses.item.BulletItem;
 import lykrast.gunswithoutroses.item.GunItem;
 import lykrast.gunswithoutrosesadditions.CompatModids;
+import lykrast.gunswithoutrosesadditions.item.aethersdelight.ArkeniumBulletItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.registries.ObjectHolder;
@@ -19,6 +19,6 @@ public class CompatAethersDelight {
 		arkeniumGun = GWRAItems.initItem(() -> new GunItem(GWRAItems.defP().durability(513), 0, 1, 16, 2, 14).repair(() -> Ingredient.of(ARKENIUM_INGOT)), "arkenium_gun");
 		
 		//TODO make them aether bullets
-		arkeniumBullet = GWRAItems.initItem(() -> new BulletItem(GWRAItems.defP(), 6), "arkenium_bullet");
+		arkeniumBullet = GWRAItems.initItem(() -> new ArkeniumBulletItem(GWRAItems.defP(), 6), "arkenium_bullet");
 	}
 }
