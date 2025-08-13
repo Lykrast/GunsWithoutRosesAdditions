@@ -1,7 +1,7 @@
 package lykrast.gunswithoutrosesadditions.registry;
 
-import lykrast.gunswithoutroses.item.GunItem;
 import lykrast.gunswithoutrosesadditions.CompatModids;
+import lykrast.gunswithoutrosesadditions.item.deepaether.SkyjadeGunItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -19,7 +19,7 @@ public class CompatDeepAether {
 		//skyjade has 60% of durability of zanite/iron and 0 enchatability?? (I'll just put a lower number)
 		//aether gun have higher accuracy lower fire rate, and the skyjade bonus damage will kick in
 		//TODO damage
-		skyjadeGun = GWRAItems.initItem(() -> new GunItem(GWRAItems.defP().durability(307), 0, 1, 18, 1, 10).repair(() -> Ingredient.of(SKYJADE_REPAIR)), "skyjade_gun");
+		skyjadeGun = GWRAItems.initItem(() -> new SkyjadeGunItem(GWRAItems.defP().durability(307), 0, 1, 18, 1, 10).repair(() -> Ingredient.of(SKYJADE_REPAIR)), "skyjade_gun");
 		
 		//TODO make them aether bullets
 		//skyjadeBullet = GWRAItems.initItem(() -> new BulletItem(GWRAItems.defP(), 6), "skyjade_bullet");
