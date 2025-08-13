@@ -18,7 +18,6 @@ public class CompatDeepAether {
 	public static void registerItems() {
 		//skyjade has 60% of durability of zanite/iron and 0 enchatability?? (I'll just put a lower number)
 		//aether gun have higher accuracy lower fire rate, and the skyjade bonus damage will kick in
-		//TODO damage
 		skyjadeGun = GWRAItems.initItem(() -> new SkyjadeGunItem(GWRAItems.defP().durability(307), 0, 1, 18, 1, 10).repair(() -> Ingredient.of(SKYJADE_REPAIR)), "skyjade_gun");
 		
 		//TODO make them aether bullets

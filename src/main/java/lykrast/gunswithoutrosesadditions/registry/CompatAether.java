@@ -19,7 +19,6 @@ public class CompatAether {
 	public static void registerItems() {
 		//zanite has same durability as iron
 		//aether gun have higher accuracy lower fire rate, and the zanite bonus damage will kick in
-		//TODO damage
 		zaniteGun = GWRAItems.initItem(() -> new ZaniteGunItem(GWRAItems.defP().durability(513), 0, 1, 18, 1, 14).repair(() -> Ingredient.of(ZANITE_REPAIR)), "zanite_gun");
 		
 		//TODO make them aether bullets
