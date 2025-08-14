@@ -6,7 +6,9 @@ import java.util.function.Supplier;
 
 import lykrast.gunswithoutrosesadditions.CompatModids;
 import lykrast.gunswithoutrosesadditions.GunsWithoutRosesAdditions;
+import lykrast.gunswithoutrosesadditions.item.HasCreativeTabSpecial;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.ModList;
@@ -20,7 +22,10 @@ public class GWRAItems {
 	
 	public static void addToCreativeTab(BuildCreativeModeTabContentsEvent event) {
 		if (event.getTabKey().location().equals(new ResourceLocation(CompatModids.GWR, CompatModids.GWR))) {
-			orderedItemsCreative.forEach(i -> event.accept(i));
+			orderedItemsCreative.forEach(i -> {
+				if (i.get() instanceof HasCreativeTabSpecial hcts) event.accept(hcts.getCreativeTabStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+				else event.accept(i);
+			});
 		}
 	}
 	

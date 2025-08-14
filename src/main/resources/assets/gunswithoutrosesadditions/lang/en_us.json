@@ -31,6 +31,11 @@
 	"item.gunswithoutrosesadditions.skyjade_gun.cap": "Minimum: %s",
 	"lore.item.gunswithoutrosesadditions.skyjade_gun": "The green glint of Skyjade is a reminder of its strength, but also its fragility. Something to cherish before it fades in the wind.",
 
+	"item.gunswithoutrosesadditions.veridium_revolver": "Veridium Revolver",
+	"item.gunswithoutrosesadditions.veridium_revolver_infused": "Infused Veridium Revolver",
+	"lore.item.gunswithoutrosesadditions.veridium_revolver": "A sleek design, but the weight of Veridium makes it awkward to wield. Infusing it with Ambrosium should fix this.",
+	"lore.item.gunswithoutrosesadditions.veridium_revolver_infused": "Infusing the Veridium makes this revolver feel weightless. Ideal for spinning.",
+
 	"item.gunswithoutrosesadditions.arkenium_gun": "Arkenium Gun",
 	"item.gunswithoutrosesadditions.arkenium_bullet": "Arkenium Bullet",
 	"tooltip.gunswithoutrosesadditions.bullet.base": "Counts as Iron Bullet",

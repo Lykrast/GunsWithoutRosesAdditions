@@ -1,0 +1,8 @@
+{
+	"type": "aether_redux:infusion",
+	"additional": { "added_infusion": 4 },
+	"ingredient": { "item": "gunswithoutrosesadditions:veridium_revolver_infused" },
+	"result": { "item": "gunswithoutrosesadditions:veridium_revolver_infused" },
+	"sound": "aether_redux:item.sfx.infuse",
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "aether_redux" }]
+}

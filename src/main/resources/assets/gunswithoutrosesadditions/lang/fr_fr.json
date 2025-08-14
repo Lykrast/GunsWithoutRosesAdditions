@@ -31,6 +31,11 @@
 	"item.gunswithoutrosesadditions.skyjade_gun.cap": "Minimum : %s",
 	"lore.item.gunswithoutrosesadditions.skyjade_gun": "L'éclat vert de la jade céleste est un signe de sa puissance, mais aussi de sa fragilité. Quelque chose à chérir avant qu'il ne se dissipe dans le vent.",
 
+	"item.gunswithoutrosesadditions.veridium_revolver": "Revolver en véridium",
+	"item.gunswithoutrosesadditions.veridium_revolver_infused": "Revolver en véridium infusé",
+	"lore.item.gunswithoutrosesadditions.veridium_revolver": "Un design élégant, mais le poids du véridium le rends difficile à manier. Une infusion d'ambrosium devrait corriger ça.",
+	"lore.item.gunswithoutrosesadditions.veridium_revolver_infused": "L'infusion du véridium a rendu ce revolver léger comme une plume. Idéal pour le faire tourner.",
+
 	"item.gunswithoutrosesadditions.arkenium_gun": "Fusil en arkénium",
 	"item.gunswithoutrosesadditions.arkenium_bullet": "Balle en arkénium",
 	"tooltip.gunswithoutrosesadditions.bullet.base": "Compte comme balle en fer",

@@ -3,10 +3,13 @@ package lykrast.gunswithoutrosesadditions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import lykrast.gunswithoutrosesadditions.registry.CompatAetherRedux;
 import lykrast.gunswithoutrosesadditions.registry.GWRAItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(GunsWithoutRosesAdditions.MODID)
@@ -19,9 +22,14 @@ public class GunsWithoutRosesAdditions {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		GWRAItems.REG.register(bus);
 		bus.addListener(GWRAItems::addToCreativeTab);
+		bus.addListener(this::commonSetup);
 	}
 	
 	public static ResourceLocation rl(String name) {
 		return new ResourceLocation(MODID, name);
+	}
+	
+	public void commonSetup(FMLCommonSetupEvent event) {
+		if (ModList.get().isLoaded(CompatModids.AETHER) && ModList.get().isLoaded(CompatModids.AETHER_REDUX)) CompatAetherRedux.makeTheVeridiumRevolversKiss();
 	}
 }

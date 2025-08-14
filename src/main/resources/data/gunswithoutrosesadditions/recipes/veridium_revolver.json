@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"I  ",
+		"SIF",
+		" SI"
+	],
+	"key": {
+		"I": { "item": "aether_redux:veridium_ingot" },
+		"S": { "tag": "aether:skyroot_stick" },
+		"F": { "item": "aether:golden_amber" }
+	},
+	"result": { "item": "gunswithoutrosesadditions:veridium_revolver" },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "aether_redux" }]
+}

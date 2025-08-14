@@ -4,6 +4,8 @@
 		{ "id": "gunswithoutrosesadditions:elementium_gun", "required": false },
 		{ "id": "gunswithoutrosesadditions:zanite_gun", "required": false },
 		{ "id": "gunswithoutrosesadditions:skyjade_gun", "required": false },
+		{ "id": "gunswithoutrosesadditions:veridium_revolver", "required": false },
+		{ "id": "gunswithoutrosesadditions:veridium_revolver_infused", "required": false },
 		{ "id": "gunswithoutrosesadditions:arkenium_gun", "required": false }
 	]
 }
