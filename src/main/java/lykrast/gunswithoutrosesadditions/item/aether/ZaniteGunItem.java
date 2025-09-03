@@ -20,23 +20,24 @@ public class ZaniteGunItem extends GunItem {
 		super(properties, bonusDamage, damageMultiplier, fireDelay, inaccuracy, enchantability);
 	}
 	
-	public static double getNormalizedZaniteBonus(ItemStack gun) {
+	public static final double getZaniteBonus(ItemStack gun) {
 		//original formula with all doubles (baseDamage * (2.0 * stack.getDamageValue() / stack.getMaxDamage() + 0.5))-baseDamage, min 0
 		//therefore multiplier is between 0 and 1.5, so normalize that to 0 to 1
 		double mult = 2.0 * (double)gun.getDamageValue() / (double)gun.getMaxDamage() - 0.5;
-		if (mult <= 0) return 0;
-		else return mult / 1.5;
+		if (mult <= 0) mult = 0;
+		else mult /= 1.5;
+		//now mult has the normalized multipier, round the bonus to 0.5 (the sword rounds to 1s already)
+		return Math.round(mult*2*(MAX-MIN))*0.5;
 	}
-	
 
 	@Override
 	public double getBonusDamage(ItemStack stack, @Nullable LivingEntity shooter) {
-		return super.getBonusDamage(stack, shooter) + MIN + getNormalizedZaniteBonus(stack)*(MAX-MIN);
+		return super.getBonusDamage(stack, shooter) + MIN + getZaniteBonus(stack);
 	}
 	
 	@Override
 	protected boolean isDamageModified(ItemStack stack) {
-		return super.isDamageModified(stack) || getNormalizedZaniteBonus(stack) > 0;
+		return super.isDamageModified(stack) || getZaniteBonus(stack) > 0;
 	}
 
 	@Override

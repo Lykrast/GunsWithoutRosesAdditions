@@ -20,24 +20,24 @@ public class SkyjadeGunItem extends GunItem {
 		super(properties, bonusDamage, damageMultiplier, fireDelay, inaccuracy, enchantability);
 	}
 	
-	public static double getNormalizedSkyjadeBonus(ItemStack gun) {
+	public static final double getSkyjadeBonus(ItemStack gun) {
 		//original formula with all doubles (baseDamage / (2.0 * stack.getDamageValue() / stack.getMaxDamage() + 0.5))-baseDamage, min 0
 		//therefore multiplier is between 0 and 1, which is actually already normalized
 		//it is such a harsh curve...
 		double mult = 1 / (2.0 * (double)gun.getDamageValue() / (double)gun.getMaxDamage() + 0.5) - 1;
-		if (mult <= 0) return 0;
-		else return mult;
+		if (mult <= 0) mult = 0;
+		//now mult has the normalized multipier, round the bonus to 0.5 (the sword rounds to 1s already)
+		return Math.round(mult*2*(MAX-MIN))*0.5;
 	}
-	
 
 	@Override
 	public double getBonusDamage(ItemStack stack, @Nullable LivingEntity shooter) {
-		return super.getBonusDamage(stack, shooter) + MIN + getNormalizedSkyjadeBonus(stack)*(MAX-MIN);
+		return super.getBonusDamage(stack, shooter) + MIN + getSkyjadeBonus(stack);
 	}
 	
 	@Override
 	protected boolean isDamageModified(ItemStack stack) {
-		return super.isDamageModified(stack) || getNormalizedSkyjadeBonus(stack) > 0;
+		return super.isDamageModified(stack) || getSkyjadeBonus(stack) > 0;
 	}
 
 	@Override
