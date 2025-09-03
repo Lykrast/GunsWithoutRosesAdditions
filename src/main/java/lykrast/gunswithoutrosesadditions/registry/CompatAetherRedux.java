@@ -19,7 +19,8 @@ public class CompatAetherRedux {
 		//also what do you mean 0 enchatability?????
 		veridiumRevolver = GWRAItems.initItem(() -> (VeridiumGunItem)new VeridiumGunItem(GWRAItems.defP().durability(1026), 0, 1, 18, 0.75, 10).repair(() -> Ingredient.of(VERIDIUM_INGOT)), "veridium_revolver");
 		//infused sword gets 20% attack speed and +2 damage
-		veridiumRevolverInfused = GWRAItems.initItem(() -> (VeridiumGunInfusedItem)new VeridiumGunInfusedItem(GWRAItems.defP().durability(1026), 2, 1, 15, 0.75, 10).repair(() -> Ingredient.of(VERIDIUM_INGOT)), "veridium_revolver_infused");
+		//but infused sword sucks ass (it's just +0.2 attack speed over iron, so outclassed by zanite) so I'm making that better
+		veridiumRevolverInfused = GWRAItems.initItem(() -> (VeridiumGunInfusedItem)new VeridiumGunInfusedItem(GWRAItems.defP().durability(1026), 2, 1, 13, 0.75, 10).repair(() -> Ingredient.of(VERIDIUM_INGOT)), "veridium_revolver_infused");
 		//doing some fugly casting here to get my functions available in the below
 	}
 	
