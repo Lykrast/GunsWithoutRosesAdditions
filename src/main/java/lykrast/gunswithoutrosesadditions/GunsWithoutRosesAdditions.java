@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import lykrast.gunswithoutrosesadditions.config.GWRAConfig;
 import lykrast.gunswithoutrosesadditions.config.GWRAConfigValues;
 import lykrast.gunswithoutrosesadditions.registry.CompatAetherRedux;
+import lykrast.gunswithoutrosesadditions.registry.GWRAEntities;
 import lykrast.gunswithoutrosesadditions.registry.GWRAItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +28,7 @@ public class GunsWithoutRosesAdditions {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		GWRAItems.REG.register(bus);
 		bus.addListener(GWRAItems::addToCreativeTab);
+		GWRAEntities.REG.register(bus);
 		bus.addListener(this::commonSetup);
 
 		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, GWRAConfig.COMMON_SPEC);

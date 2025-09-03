@@ -23,8 +23,10 @@
 	"item.gunswithoutrosesadditions.zanite_gun.desc": "Damage increases as durability lowers",
 	"item.gunswithoutrosesadditions.zanite_gun.cap": "Maximum: %s",
 	"item.gunswithoutrosesadditions.zanite_bullet": "Zanite Bullet",
+	"tooltip.gunswithoutrosesadditions.bullet.aether": "Effective against Aether mobs",
 	"lore.item.gunswithoutrosesadditions.zanite_gun": "A Zanite weapon is not finished until wear and tear reveals its true strength. One day this pistol will hold tremendous firepower.",
 	"lore.item.gunswithoutrosesadditions.zanite_bullet": "A bullet will not last long enough to benefit from Zanite's unique strength, but it remains an effective projectile.",
+	"entity.gunswithoutrosesadditions.aether_bullet": "Aether Bullet",
 
 	"item.gunswithoutrosesadditions.skyjade_gun": "Skyjade Gun",
 	"item.gunswithoutrosesadditions.skyjade_gun.desc": "Damage decreases as durability lowers",

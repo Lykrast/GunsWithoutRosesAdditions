@@ -23,8 +23,10 @@
 	"item.gunswithoutrosesadditions.zanite_gun.desc": "Les dégâts augmentent quand la durabilité baisse",
 	"item.gunswithoutrosesadditions.zanite_gun.cap": "Maximum : %s",
 	"item.gunswithoutrosesadditions.zanite_bullet": "Balle en zanite",
+	"tooltip.gunswithoutrosesadditions.bullet.aether": "Efficace contre les mobs de l'Aether",
 	"lore.item.gunswithoutrosesadditions.zanite_gun": "Une arme en zanite n'est pas achevée tant que l'usure n'a pas révélé sa vraie force. Un jour ce pistolet aura une puissance de feu formidable.",
 	"lore.item.gunswithoutrosesadditions.zanite_bullet": "Une balle ne dure pas assez longtemps pour libérer la puissance du zanite, mais elle reste un projectile efficace.",
+	"entity.gunswithoutrosesadditions.aether_bullet": "Balle de l'Aether",
 
 	"item.gunswithoutrosesadditions.skyjade_gun": "Fusil en jade céleste",
 	"item.gunswithoutrosesadditions.skyjade_gun.desc": "Les dégâts diminuent avec la durabilité",

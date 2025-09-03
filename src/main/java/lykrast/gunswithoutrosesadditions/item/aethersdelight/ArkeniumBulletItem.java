@@ -4,14 +4,14 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import lykrast.gunswithoutroses.item.BulletItem;
+import lykrast.gunswithoutrosesadditions.entity.aether.AetherBulletItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 
-public class ArkeniumBulletItem extends BulletItem {
+public class ArkeniumBulletItem extends AetherBulletItem {
 
 	public ArkeniumBulletItem(Properties properties, int damage) {
 		super(properties, damage);

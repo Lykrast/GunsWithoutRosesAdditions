@@ -17,13 +17,24 @@ public class GWRAConfig {
 		COMMON = specPair.getLeft();
 		COMMON_SPEC = specPair.getRight();
 	}
-	
+
+	//aether
+	public final BooleanValue aetherBulletTooltip;
+	//deep aether
 	public final BooleanValue skyjadeAltCurve;
 	
 	public GWRAConfig(ForgeConfigSpec.Builder builder) {
+		builder.comment("Aether");
+		builder.push("aether");
+		aetherBulletTooltip = boolval(builder, "aetherBulletTooltip", true, "Should Aether bullets say they work good on Aether mobs? (THIS ONLY AFFECTS THE TOOLTIP)",
+				"Turn this off if you disabled the Aether's tool nerf in its server config (or put a mod that nukes it) or if you're doing the following Tip", 
+				"Tip: to make all bullets be unnerfed but keep the global tool nerf, add #gunswithoutroses:is_bullet to the entity tag aether:treated_as_aether_entity");
+		builder.pop();
 		builder.comment("Deep Aether");
 		builder.push("deep_aether");
-		skyjadeAltCurve = boolval(builder, "skyjadeAltCurve", false, "Which curve to use for the Skyjade Gun's bonus damage", "false: use the one from Deep Aether, matches the Skyjade Sword but is incredibly sharp", "true: use a reversed version of the Zanite Gun/Sword's curve, which is less harsh and has the bonus lasts ~3x longer");
+		skyjadeAltCurve = boolval(builder, "skyjadeAltCurve", false, "Which curve to use for the Skyjade Gun's bonus damage",
+				"false: use the one from Deep Aether, matches the Skyjade Sword but is incredibly sharp",
+				"true: use a reversed version of the Zanite Gun/Sword's curve, which is less harsh and has the bonus lasts ~3x longer");
 		builder.pop();
 	}
 	
