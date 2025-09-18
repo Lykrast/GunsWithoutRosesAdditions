@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"D  ",
+		"PDF",
+		" PL"
+	],
+	"key": {
+		"D": { "tag": "aether:processed/gravitite" },
+		"F": { "item": "aether:golden_amber" },
+		"P": { "tag": "forge:leather" },
+		"L": { "tag": "aether:skyroot_logs" }
+	},
+	"result": { "item": "gunswithoutrosesadditions:gravitite_shotgun" },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "aether" }]
+}

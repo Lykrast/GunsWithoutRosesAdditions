@@ -20,6 +20,8 @@
 	"item.gunswithoutrosesadditions.zanite_gun": "Zanite Gun",
 	"item.gunswithoutrosesadditions.zanite_gun.desc": "Damage increases as durability lowers",
 	"item.gunswithoutrosesadditions.zanite_gun.cap": "Maximum: %s",
+	"item.gunswithoutrosesadditions.gravitite_shotgun": "Gravitite Shotgun",
+	"item.gunswithoutrosesadditions.gravitite_shotgun.desc": "Knocks nearby entities away",
 	"item.gunswithoutrosesadditions.zanite_bullet": "Zanite Bullet",
 	"tooltip.gunswithoutrosesadditions.bullet.aether": "Effective against Aether mobs",
 	"lore.item.gunswithoutrosesadditions.zanite_gun": "A Zanite weapon is not finished until wear and tear reveals its true strength. One day this pistol will hold tremendous firepower.",

@@ -20,6 +20,8 @@
 	"item.gunswithoutrosesadditions.zanite_gun": "Fusil en zanite",
 	"item.gunswithoutrosesadditions.zanite_gun.desc": "Les dégâts augmentent quand la durabilité baisse",
 	"item.gunswithoutrosesadditions.zanite_gun.cap": "Maximum : %s",
+	"item.gunswithoutrosesadditions.gravitite_shotgun": "Fusil à pompe en gravitite",
+	"item.gunswithoutrosesadditions.gravitite_shotgun.desc": "Repousse les entités proches",
 	"item.gunswithoutrosesadditions.zanite_bullet": "Balle en zanite",
 	"tooltip.gunswithoutrosesadditions.bullet.aether": "Efficace contre les mobs de l'Aether",
 	"lore.item.gunswithoutrosesadditions.zanite_gun": "Une arme en zanite n'est pas achevée tant que l'usure n'a pas révélé sa vraie force. Un jour ce pistolet aura une puissance de feu formidable.",

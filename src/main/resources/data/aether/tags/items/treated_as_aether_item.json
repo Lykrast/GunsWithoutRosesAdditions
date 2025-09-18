@@ -1,6 +1,7 @@
 {
 	"values": [
 		{ "id": "gunswithoutrosesadditions:zanite_gun", "required": false },
+		{ "id": "gunswithoutrosesadditions:gravitite_shotgun", "required": false },
 		{ "id": "gunswithoutrosesadditions:zanite_bullet", "required": false },
 		{ "id": "gunswithoutrosesadditions:skyjade_gun", "required": false },
 		{ "id": "gunswithoutrosesadditions:veridium_revolver", "required": false },
