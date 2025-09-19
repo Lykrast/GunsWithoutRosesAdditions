@@ -16,7 +16,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class GravititeShotgunItem extends GunItem {
-	private static final double RANGE = 4, RANGESQR = RANGE*RANGE, KNOCKBACK = 2;
+	private static final double RANGE = 4, RANGESQR = RANGE*RANGE, KNOCKBACK = 1;
 
 	public GravititeShotgunItem(Properties properties, int bonusDamage, double damageMultiplier, int fireDelay, double inaccuracy, int enchantability) {
 		super(properties, bonusDamage, damageMultiplier, fireDelay, inaccuracy, enchantability);
@@ -37,7 +37,7 @@ public class GravititeShotgunItem extends GunItem {
 	
 	protected void knocbackBurst(LivingEntity shooter, Level level) {
 		//TODO particles
-		var origin = shooter.getEyePosition();
+		var origin = shooter.position();
 		var look = shooter.getLookAngle();
 		for (LivingEntity ent : level.getEntitiesOfClass(LivingEntity.class, shooter.getBoundingBox().inflate(RANGE))) {
 			//immunity check
@@ -50,7 +50,7 @@ public class GravititeShotgunItem extends GunItem {
 			var toTarget = ent.position().subtract(origin).normalize();
 			if (distSqr > 1 && toTarget.dot(look) < 0) continue;
 			//and now we actually knock back
-			double amplitude = KNOCKBACK*((distSqr / RANGESQR)*0.6 + 0.4);
+			double amplitude = KNOCKBACK*((1-(distSqr / RANGESQR))*0.8 + 0.2);
 			amplitude *= Math.max(0, 1 - ent.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE));
 			ent.push(toTarget.x*amplitude,(Math.max(0,toTarget.y)+0.2)*amplitude,toTarget.z*amplitude);
 			

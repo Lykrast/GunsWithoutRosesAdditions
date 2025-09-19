@@ -30,8 +30,7 @@ public class CompatAether {
 		//aether gun have higher accuracy lower fire rate, and the zanite bonus damage will kick in
 		zaniteGun = GWRAItems.initItem(() -> new ZaniteGunItem(GWRAItems.defP().durability(513), 0, 1, 18, 1, 14).repair(() -> Ingredient.of(ZANITE_REPAIR)), "zanite_gun");
 		//gravitite has durability of diamond
-		//TODO proper stats
-		gravititeShotgun = GWRAItems.initItem(() -> new GravititeShotgunItem(GWRAItems.defP().durability(2076), 0, 0.6, 20, 6, 10).projectiles(4).fireSound(GWRSounds.shotgun).repair(() -> Ingredient.of(GRAVITITE_REPAIR)), "gravitite_shotgun");
+		gravititeShotgun = GWRAItems.initItem(() -> new GravititeShotgunItem(GWRAItems.defP().durability(2076), 1, 0.6, 25, 8, 10).projectiles(4).fireSound(GWRSounds.shotgun).repair(() -> Ingredient.of(GRAVITITE_REPAIR)), "gravitite_shotgun");
 		
 		zaniteBullet = GWRAItems.initItem(() -> new AetherBulletItem(GWRAItems.defP(), 6), "zanite_bullet");
 	}
