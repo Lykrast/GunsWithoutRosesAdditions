@@ -118,6 +118,10 @@ repositories {
                 includeGroup("com.eliotlash.mclib")
         }
     }
+    maven {
+        name = "twilightforest"
+        url = "https://modmaven.dev/"
+    }
 }
 
 dependencies {
@@ -157,6 +161,9 @@ dependencies {
     implementation fg.deobf("maven.modrinth:deep-aether:${project.deep_aether_version}")
     //and this one needs farmer's delight too
     implementation fg.deobf("maven.modrinth:the-aethers-delight:${project.aethers_delight_version}")
+
+    //twilight forest
+    implementation fg.deobf("teamtwilight:twilightforest:${project.twilight_forest_version}:universal")
 }
 
 jar {

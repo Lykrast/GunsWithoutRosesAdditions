@@ -17,5 +17,7 @@ public class CompatModids {
 	public static final String AETHER_REDUX = "aether_redux";
 	public static final String AETHERS_DELIGHT = "aethersdelight";
 	
+	public static final String TWILIGHT_FOREST = "twilightforest";
+	
 	private CompatModids() {}
 }
