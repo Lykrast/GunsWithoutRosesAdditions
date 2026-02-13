@@ -17,7 +17,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class KnightmetalBullet extends BulletItem {
-	private static final double MULTIPLIER = 1.2;
+	private static final double MULTIPLIER = 1.25;
 
 	public KnightmetalBullet(Properties properties, int damage) {
 		super(properties, damage);

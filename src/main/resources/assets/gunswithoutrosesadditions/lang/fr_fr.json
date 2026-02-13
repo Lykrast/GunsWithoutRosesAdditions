@@ -46,7 +46,8 @@
 	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "La similarité entre l'arkénium et le fer est impressionnante. On pourrait facilement confondre ces balles avec des balles en fer.",
 
 	"item.gunswithoutrosesadditions.knightmetal_shotgun": "Destructeur chevaleresque",
-	"item.gunswithoutrosesadditions.knightmetal_shotgun.desc": "TODOTODO",
+	"item.gunswithoutrosesadditions.knightmetal_shotgun.desc": "+1 projectile par %1$d points d'armure",
+	"item.gunswithoutrosesadditions.knightmetal_shotgun.cap": "Maximum : %1$s",
 	"item.gunswithoutrosesadditions.knightmetal_bullet": "Balle chevaleresque",
 	"item.gunswithoutrosesadditions.knightmetal_bullet.desc": "+%1$d%% dégâts si la cible a des points d'armure"
 }

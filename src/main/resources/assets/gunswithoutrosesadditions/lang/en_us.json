@@ -46,7 +46,8 @@
 	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "It's impressive how similar Arkenium feels to Iron. These bullets could easily pass for Iron Bullets.",
 
 	"item.gunswithoutrosesadditions.knightmetal_shotgun": "Knightmetal Blaster",
-	"item.gunswithoutrosesadditions.knightmetal_shotgun.desc": "TODOTODO",
+	"item.gunswithoutrosesadditions.knightmetal_shotgun.desc": "+1 Projectile per %1$d Armor Points",
+	"item.gunswithoutrosesadditions.knightmetal_shotgun.cap": "Maximum: %1$s",
 	"item.gunswithoutrosesadditions.knightmetal_bullet": "Knightmetal Bullet",
 	"item.gunswithoutrosesadditions.knightmetal_bullet.desc": "+%1$d%% damage if target has Armor Points"
 }
