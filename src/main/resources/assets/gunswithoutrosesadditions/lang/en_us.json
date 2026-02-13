@@ -48,5 +48,5 @@
 	"item.gunswithoutrosesadditions.knightmetal_shotgun": "Knightmetal Blaster",
 	"item.gunswithoutrosesadditions.knightmetal_shotgun.desc": "TODOTODO",
 	"item.gunswithoutrosesadditions.knightmetal_bullet": "Knightmetal Bullet",
-	"item.gunswithoutrosesadditions.knightmetal_bullet.desc": "TODOTODO"
+	"item.gunswithoutrosesadditions.knightmetal_bullet.desc": "+%1$d%% damage if target has Armor Points"
 }

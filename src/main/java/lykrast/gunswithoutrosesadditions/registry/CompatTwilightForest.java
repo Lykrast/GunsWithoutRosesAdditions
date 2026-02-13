@@ -1,9 +1,9 @@
 package lykrast.gunswithoutrosesadditions.registry;
 
-import lykrast.gunswithoutroses.item.BulletItem;
 import lykrast.gunswithoutroses.item.GunItem;
 import lykrast.gunswithoutroses.registry.GWRSounds;
 import lykrast.gunswithoutrosesadditions.CompatModids;
+import lykrast.gunswithoutrosesadditions.item.twilightforest.KnightmetalBullet;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -21,6 +21,6 @@ public class CompatTwilightForest {
 		//knightmetal tools have 512 durability and diamond strength without their bonuses
 		knightmetalShotgun = GWRAItems.initItem(() -> new GunItem(GWRAItems.defP().durability(1051), 1, 0.6, 25, 8, 8).projectiles(4).fireSound(GWRSounds.shotgun).repair(() -> Ingredient.of(KNIGHTMETAL)), "knightmetal_shotgun");
 		
-		knightmetalBullet = GWRAItems.initItem(() -> new BulletItem(GWRAItems.defP(), 6), "knightmetal_bullet");
+		knightmetalBullet = GWRAItems.initItem(() -> new KnightmetalBullet(GWRAItems.defP(), 6), "knightmetal_bullet");
 	}
 }

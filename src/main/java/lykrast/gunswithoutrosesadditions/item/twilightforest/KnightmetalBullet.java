@@ -1,4 +1,4 @@
-package lykrast.gunswithoutrosesadditions.item.undergarden;
+package lykrast.gunswithoutrosesadditions.item.twilightforest;
 
 import java.util.List;
 
@@ -9,23 +9,24 @@ import lykrast.gunswithoutroses.item.BulletItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import quek.undergarden.registry.UGTags;
 
-public class UtheriumBullet extends BulletItem {
-	private static final double MULTIPLIER = 1.5;
+public class KnightmetalBullet extends BulletItem {
+	private static final double MULTIPLIER = 1.2;
 
-	public UtheriumBullet(Properties properties, int damage) {
+	public KnightmetalBullet(Properties properties, int damage) {
 		super(properties, damage);
 	}
 
 	@Override
 	public double modifyDamage(double damage, BulletEntity projectile, Entity target, @Nullable Entity shooter, Level world, boolean headshot) {
-		return target.getType().is(UGTags.Entities.ROTSPAWN) ? damage * MULTIPLIER : damage;
+		if (target instanceof LivingEntity ltarget) return ltarget.getArmorValue() > 0 ? damage * MULTIPLIER : damage;
+		else return damage;
 	}
 
 	@Override
