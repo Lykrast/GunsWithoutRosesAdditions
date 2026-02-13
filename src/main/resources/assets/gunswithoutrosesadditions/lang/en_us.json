@@ -43,5 +43,10 @@
 	"item.gunswithoutrosesadditions.arkenium_bullet": "Arkenium Bullet",
 	"tooltip.gunswithoutrosesadditions.bullet.base": "Counts as Iron Bullet",
 	"lore.item.gunswithoutrosesadditions.arkenium_gun": "Working Arkenium feels oddly familiar. With your eyes closed it would be hard to tell it apart from an Iron Gun.",
-	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "It's impressive how similar Arkenium feels to Iron. These bullets could easily pass for Iron Bullets."
+	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "It's impressive how similar Arkenium feels to Iron. These bullets could easily pass for Iron Bullets.",
+
+	"item.gunswithoutrosesadditions.knightmetal_shotgun": "Knightmetal Blaster",
+	"item.gunswithoutrosesadditions.knightmetal_shotgun.desc": "TODOTODO",
+	"item.gunswithoutrosesadditions.knightmetal_bullet": "Knightmetal Bullet",
+	"item.gunswithoutrosesadditions.knightmetal_bullet.desc": "TODOTODO"
 }

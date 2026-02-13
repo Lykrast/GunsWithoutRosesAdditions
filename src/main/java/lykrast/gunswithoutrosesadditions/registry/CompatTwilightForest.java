@@ -1,0 +1,26 @@
+package lykrast.gunswithoutrosesadditions.registry;
+
+import lykrast.gunswithoutroses.item.BulletItem;
+import lykrast.gunswithoutroses.item.GunItem;
+import lykrast.gunswithoutroses.registry.GWRSounds;
+import lykrast.gunswithoutrosesadditions.CompatModids;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.registries.RegistryObject;
+
+public class CompatTwilightForest {
+	public static RegistryObject<Item> knightmetalShotgun;
+	public static RegistryObject<Item> knightmetalBullet;
+	public static TagKey<Item> KNIGHTMETAL = ItemTags.create(new ResourceLocation(CompatModids.FORGE, "ingots/knightmetal"));
+	
+	public static void registerItems() {
+		//TODO real stats, just copied the aether ones (except durabiliyt and enchant) for placeholdering
+		//knightmetal tools have 512 durability and diamond strength without their bonuses
+		knightmetalShotgun = GWRAItems.initItem(() -> new GunItem(GWRAItems.defP().durability(1051), 1, 0.6, 25, 8, 8).projectiles(4).fireSound(GWRSounds.shotgun).repair(() -> Ingredient.of(KNIGHTMETAL)), "knightmetal_shotgun");
+		
+		knightmetalBullet = GWRAItems.initItem(() -> new BulletItem(GWRAItems.defP(), 6), "knightmetal_bullet");
+	}
+}

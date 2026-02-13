@@ -1,6 +1,7 @@
 {
 	"values": [
 		{ "id": "gunswithoutrosesadditions:terra_shotgun", "required": false },
-		{ "id": "gunswithoutrosesadditions:gravitite_shotgun", "required": false }
+		{ "id": "gunswithoutrosesadditions:gravitite_shotgun", "required": false },
+		{ "id": "gunswithoutrosesadditions:knightmetal_shotgun", "required": false }
 	]
 }

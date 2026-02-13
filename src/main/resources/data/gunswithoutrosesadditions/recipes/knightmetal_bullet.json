@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{ "tag": "forge:ingots/knightmetal" },
+		{ "tag": "forge:ingots/knightmetal" },
+		{ "tag": "forge:ingots/knightmetal" },
+		{ "tag": "forge:ingots/knightmetal" },
+        { "tag": "forge:gunpowder" }
+    ],
+	"result": { "item": "gunswithoutrosesadditions:knightmetal_bullet", "count": 32 },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "twilightforest" }]
+}

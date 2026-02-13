@@ -4,6 +4,7 @@ public class CompatModids {
 	public static final String ITEM = "minecraft:item";
 	public static final String EFFECT = "minecraft:mob_effect";
 	public static final String ENTITY = "minecraft:entity_type";
+	public static final String FORGE = "forge";
 
 	public static final String GWR = "gunswithoutroses";
 	

@@ -40,6 +40,7 @@ public class GWRAItems {
 			if (ModList.get().isLoaded(CompatModids.AETHER_REDUX)) CompatAetherRedux.registerItems();
 			if (ModList.get().isLoaded(CompatModids.AETHERS_DELIGHT)) CompatAethersDelight.registerItems();
 		}
+		if (ModList.get().isLoaded(CompatModids.TWILIGHT_FOREST)) CompatTwilightForest.registerItems();
 	}
 
 	public static Item.Properties defP() {

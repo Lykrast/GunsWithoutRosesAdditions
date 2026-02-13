@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"D  ",
+		"DDF",
+		" DL"
+	],
+	"key": {
+		"D": { "tag": "forge:ingots/knightmetal" },
+		"F": { "item": "minecraft:flint" },
+		"L": { "tag": "minecraft:logs" }
+	},
+	"result": { "item": "gunswithoutrosesadditions:knightmetal_shotgun" },
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "twilightforest" }]
+}

@@ -43,5 +43,10 @@
 	"item.gunswithoutrosesadditions.arkenium_bullet": "Balle en arkénium",
 	"tooltip.gunswithoutrosesadditions.bullet.base": "Compte comme balle en fer",
 	"lore.item.gunswithoutrosesadditions.arkenium_gun": "Travailler l'arkénium semble étrangement familier. En fermant les yeux il serait difficile de le distinguer d'un fusil en fer.",
-	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "La similarité entre l'arkénium et le fer est impressionnante. On pourrait facilement confondre ces balles avec des balles en fer."
+	"lore.item.gunswithoutrosesadditions.arkenium_bullet": "La similarité entre l'arkénium et le fer est impressionnante. On pourrait facilement confondre ces balles avec des balles en fer.",
+
+	"item.gunswithoutrosesadditions.knightmetal_shotgun": "Destructeur chevaleresque",
+	"item.gunswithoutrosesadditions.knightmetal_shotgun.desc": "TODOTODO",
+	"item.gunswithoutrosesadditions.knightmetal_bullet": "Balle chevaleresque",
+	"item.gunswithoutrosesadditions.knightmetal_bullet.desc": "TODOTODO"
 }
