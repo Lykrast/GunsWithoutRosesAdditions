@@ -1,15 +1,16 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"D  ",
 		"DDF",
-		" DL"
+		"DAD",
+		"  L"
 	],
 	"key": {
+		"A": { "item": "bypowderandsteel:assembly_basic" },
 		"D": { "tag": "forge:ingots/knightmetal" },
 		"F": { "item": "minecraft:flint" },
 		"L": { "tag": "minecraft:logs" }
 	},
 	"result": { "item": "gunswithoutrosesadditions:knightmetal_shotgun" },
-	"conditions": [{ "type": "forge:mod_loaded", "modid": "twilightforest" }, { "type": "forge:not", "value": { "type": "forge:mod_loaded", "modid": "bypowderandsteel" }}]
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "twilightforest" }, { "type": "forge:mod_loaded", "modid": "bypowderandsteel" }]
 }

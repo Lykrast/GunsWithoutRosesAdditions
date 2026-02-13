@@ -1,16 +1,16 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"D  ",
-		"SDF",
-		" SL"
+		"D F",
+		"LAL",
+		"D L"
 	],
 	"key": {
+		"A": { "item": "bypowderandsteel:assembly_diamond" },
 		"D": { "tag": "botania:terrasteel_ingots" },
-		"S": { "item": "botania:livingwood_twig" },
 		"F": { "item": "minecraft:flint" },
 		"L": { "tag": "botania:livingwood_logs" }
 	},
 	"result": { "item": "gunswithoutrosesadditions:terra_shotgun" },
-	"conditions": [{ "type": "forge:mod_loaded", "modid": "botania" }, { "type": "forge:not", "value": { "type": "forge:mod_loaded", "modid": "bypowderandsteel" }}]
+	"conditions": [{ "type": "forge:mod_loaded", "modid": "botania" }, { "type": "forge:mod_loaded", "modid": "bypowderandsteel" }]
 }
